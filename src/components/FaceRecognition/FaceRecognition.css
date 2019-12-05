@@ -1,0 +1,16 @@
+
+.bounding-box{
+	position: absolute;
+	box-shadow: 0 0 0 3px #357edd inset;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	cursor: pointer;
+	filter: brightness(100%);
+	transition: 0.25s ease-in-out;
+}
+
+.bounding-box:hover {
+	filter: brightness(160%);
+	transition: .12s ease-in;
+}
