@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/faceowl/static/css/main.697260f4.chunk.css",
+    "main.js": "/faceowl/static/js/main.5aea9ead.chunk.js",
+    "main.js.map": "/faceowl/static/js/main.5aea9ead.chunk.js.map",
+    "runtime-main.js": "/faceowl/static/js/runtime-main.8957d45b.js",
+    "runtime-main.js.map": "/faceowl/static/js/runtime-main.8957d45b.js.map",
+    "static/css/2.eb45ad44.chunk.css": "/faceowl/static/css/2.eb45ad44.chunk.css",
+    "static/js/2.551be3e7.chunk.js": "/faceowl/static/js/2.551be3e7.chunk.js",
+    "static/js/2.551be3e7.chunk.js.map": "/faceowl/static/js/2.551be3e7.chunk.js.map",
+    "index.html": "/faceowl/index.html",
+    "precache-manifest.c9b840e32b61b43c176c0ec521b6fb8b.js": "/faceowl/precache-manifest.c9b840e32b61b43c176c0ec521b6fb8b.js",
+    "service-worker.js": "/faceowl/service-worker.js",
+    "static/css/2.eb45ad44.chunk.css.map": "/faceowl/static/css/2.eb45ad44.chunk.css.map",
+    "static/css/main.697260f4.chunk.css.map": "/faceowl/static/css/main.697260f4.chunk.css.map",
+    "static/media/Logo.png": "/faceowl/static/media/Logo.a152100e.png",
+    "static/media/index.css": "/faceowl/static/media/QuattrocentoSans-Regular.80c5a8d1.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8957d45b.js",
+    "static/css/2.eb45ad44.chunk.css",
+    "static/js/2.551be3e7.chunk.js",
+    "static/css/main.697260f4.chunk.css",
+    "static/js/main.5aea9ead.chunk.js"
+  ]
+}
