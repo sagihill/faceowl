@@ -95,7 +95,7 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({imageURL: this.state.input});
-    fetch('http://localhost:8080/imageURL',{
+    fetch('https://agile-eyrie-66946.herokuapp.com/imageURL',{
           method: 'post',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
@@ -105,7 +105,7 @@ class App extends Component {
     .then(response => response.json())
     .then(response => {
       if (response) {
-        fetch('http://localhost:8080/image',{
+        fetch('https://agile-eyrie-66946.herokuapp.com/image',{
           method: 'put',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
