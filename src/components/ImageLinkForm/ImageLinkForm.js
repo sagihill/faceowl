@@ -4,8 +4,8 @@ import './ImageLinkForm.css';
 const ImageLinkForm = ({onInputChange, onButtonSubmit}) => {
 	return (
 		<div className ='ma4 mt0'>
-			<p className='f5'>
-				{'My Owl will detect faces in your pictures. Give it a try.'}
+			<p className='light-yellow f4'>
+				{'My Owl will detect faces in your pictures. Please paste an image URL and give it a try.'}
 			</p>
 			<div className='center'>
 				<div className='bg-black-10 br2 ba b--black-10 form center pa4 shadow-5'>
