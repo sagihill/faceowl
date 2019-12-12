@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c97c3b69187e8cdc3a64509aac070e27",
+    "revision": "f90ef4e11c1c26fe18a2e5d9501d5886",
     "url": "/faceowl/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/faceowl/static/css/2.eb45ad44.chunk.css"
   },
   {
-    "revision": "63fce70b81f4cfa8663b",
+    "revision": "852846fe621eb909836b",
     "url": "/faceowl/static/css/main.697260f4.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/faceowl/static/js/2.6e70c3e9.chunk.js"
   },
   {
-    "revision": "63fce70b81f4cfa8663b",
-    "url": "/faceowl/static/js/main.1eeaa780.chunk.js"
+    "revision": "852846fe621eb909836b",
+    "url": "/faceowl/static/js/main.bbcc2529.chunk.js"
   },
   {
     "revision": "17ccc2229375e4243f29",
