@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/faceowl/static/css/main.697260f4.chunk.css",
-    "main.js": "/faceowl/static/js/main.8d611a3e.chunk.js",
-    "main.js.map": "/faceowl/static/js/main.8d611a3e.chunk.js.map",
+    "main.js": "/faceowl/static/js/main.130af2c0.chunk.js",
+    "main.js.map": "/faceowl/static/js/main.130af2c0.chunk.js.map",
     "runtime-main.js": "/faceowl/static/js/runtime-main.8957d45b.js",
     "runtime-main.js.map": "/faceowl/static/js/runtime-main.8957d45b.js.map",
     "static/css/2.eb45ad44.chunk.css": "/faceowl/static/css/2.eb45ad44.chunk.css",
     "static/js/2.6e70c3e9.chunk.js": "/faceowl/static/js/2.6e70c3e9.chunk.js",
     "static/js/2.6e70c3e9.chunk.js.map": "/faceowl/static/js/2.6e70c3e9.chunk.js.map",
     "index.html": "/faceowl/index.html",
-    "precache-manifest.94e83f3c6d1b22220fb916e271048f56.js": "/faceowl/precache-manifest.94e83f3c6d1b22220fb916e271048f56.js",
+    "precache-manifest.6e28a9a145e924531e2539cdf0bdb51a.js": "/faceowl/precache-manifest.6e28a9a145e924531e2539cdf0bdb51a.js",
     "service-worker.js": "/faceowl/service-worker.js",
     "static/css/2.eb45ad44.chunk.css.map": "/faceowl/static/css/2.eb45ad44.chunk.css.map",
     "static/css/main.697260f4.chunk.css.map": "/faceowl/static/css/main.697260f4.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.eb45ad44.chunk.css",
     "static/js/2.6e70c3e9.chunk.js",
     "static/css/main.697260f4.chunk.css",
-    "static/js/main.8d611a3e.chunk.js"
+    "static/js/main.130af2c0.chunk.js"
   ]
 }
