@@ -40,6 +40,8 @@ const particlesOptions = {
   retina_detect: true
 }
 
+const initialInput = 'Please paste an image URL here';
+
 const initialState = {
   input: 'Please paste an image URL here',
   imageURL: '',
@@ -93,8 +95,12 @@ class App extends Component {
     this.setState({input : event.target.value});
   }
 
-  onInputClick = () => {
+  onInputFocus = () => {
     this.setState({input : ''});
+  }
+
+  onInputBlur = () => {
+    this.setState({input : 'Please paste an image URL here'});
   }
 
   handleKeyUp = (event) => {
@@ -141,7 +147,7 @@ class App extends Component {
         })
     .then(response => response.json())
     .then(response => {
-      if (response) {
+      if (response!=='unable to work with Clarifai API') {
         fetch('https://agile-eyrie-66946.herokuapp.com/image',{
           method: 'put',
           headers: {'Content-Type': 'application/json'},
@@ -185,7 +191,8 @@ class App extends Component {
               <ImageLinkForm 
                 input = {this.state.input}
                 onInputChange={this.onInputChange} 
-                onInputClick={this.onInputClick}
+                onInputFocus={this.onInputFocus}
+                onInputBlur={this.onInputBlur}
                 onButtonSubmit={this.onButtonSubmit}
                 handleKeyUp = {this.handleKeyUp}
               />
