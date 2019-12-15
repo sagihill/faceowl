@@ -7,7 +7,7 @@ A React Web App for face-recognition service, part of ZtM final project.
 * Sign-in and Register Forms
 * User Database
 * Face-Recognition API
-* Uses counter
+* Users counter
 
 ## Built With
 
