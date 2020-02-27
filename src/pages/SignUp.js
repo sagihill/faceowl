@@ -43,10 +43,12 @@ class SignUp extends Component {
 					this.props.loadUser(user);
 					//routing to homepage
 					this.props.onRouteChange('home');
+				} else {
+					alert('The email address you have entered is already registered')
 				}
 			})
         } catch (error) {
-            console.log('error creating user', error.message);
+			console.log('error creating user', error.message);
         }
         this.setState({...initialState,isLoading: true});
     }

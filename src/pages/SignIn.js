@@ -29,6 +29,7 @@ class SignIn extends Component {
     }
 
 	handleSubmit = async (event) => {
+		let flag = false;
         event.preventDefault();
         const { email, password } = this.state;
         try {
@@ -52,8 +53,8 @@ class SignIn extends Component {
 			  })
         } catch(error) {
             console.log('error sign in user', error.message);
-        }
-        this.setState({...initialState, isLoading: true});
+		}
+		this.setState({...initialState, isLoading: true});
     }
 	render() {
 		const {onRouteChange} = this.props;

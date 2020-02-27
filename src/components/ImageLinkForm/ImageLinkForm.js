@@ -17,8 +17,8 @@ const ImageLinkForm = ({onInputChange,onInputFocus,onInputBlur, onButtonSubmit, 
 							onFocus = {onInputFocus}
 							onKeyUp = {handleKeyUp}
 							onChange = {onInputChange} />
-						<div class="flex flex-row upload-btn-wrapper center grow dib pointer">
-							<button class="btn f5 ph3 pv2 dib white-80 bg-near-black pointer">Browse for Image</button>
+						<div className="flex flex-row upload-btn-wrapper center grow dib pointer">
+							<button className="btn f5 ph3 pv2 dib white-80 bg-near-black pointer">Browse for Image</button>
 							<input onClick={onButtonClick} className='upload-input pointer ' type="file" accept="image/*" placeholder="Browse" onChange={OnImageUpload}/>
 							{isImageLoaded ? (
 								<div className="pa2">
