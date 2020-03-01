@@ -82,18 +82,18 @@ class App extends Component {
   //a method for calculating face location in the photo
   //the input is the response of clarifai api
   calculateFaceLocation = faceData => {
+    console.log(faceData)
     //using first face for calculation
     //can be scaled up for more than one face
-    const clarifaiFace = faceData; 
     const image = document.getElementById("inputimage");
     //getting image dimensions (width is constant but height varies)
     const width = Number(image.width);
     const height = Number(image.height);
     return {
-      leftCol: clarifaiFace.left_col * width,
-      rightCol: (1 - clarifaiFace.right_col) * width,
-      topRow: clarifaiFace.top_row * height,
-      bottomRow: (1 - clarifaiFace.bottom_row) * height
+      leftCol: faceData.left_col * width,
+      rightCol: (1 - faceData.right_col) * width,
+      topRow: faceData.top_row * height,
+      bottomRow: (1 - faceData.bottom_row) * height
     };
   };
   //uses calculateFaceLocation method for box display
