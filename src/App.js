@@ -84,8 +84,7 @@ class App extends Component {
   calculateFaceLocation = faceData => {
     //using first face for calculation
     //can be scaled up for more than one face
-    const clarifaiFace =
-      faceData.outputs[0].data.regions[0].region_info.bounding_box; 
+    const clarifaiFace = faceData; 
     const image = document.getElementById("inputimage");
     //getting image dimensions (width is constant but height varies)
     const width = Number(image.width);
@@ -188,7 +187,7 @@ onButtonSubmit = () => {
             this.displayFaceBox(this.calculateFaceLocation(response));
           } else {
             this.setState({isFaceFound: false, input: "Please paste an image URL here" })
-            alert('Sorry something went wrong, please try again')
+            alert('Sorry something went wrong, please try again');
           }
         })
         .catch(err => console.log(err));
