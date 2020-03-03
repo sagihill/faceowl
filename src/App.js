@@ -6,6 +6,7 @@ import SignUp from "./pages/SignUp";
 import Navigation from "./components/Navigation/Navigation";
 import Hompage from "./pages/Homepage";
 
+//Setup code for PArticles package
 const particlesOptions = {
   particles: {
     number: {
@@ -37,6 +38,7 @@ const particlesOptions = {
   retina_detect: true
 };
 
+//initial textbox input after component mounting
 const initialInput = "Please paste an image URL here";
 
 //The empty state - when App is renderd
@@ -59,6 +61,8 @@ const initialState = {
   }
 };
 
+//This is the main class App which hold the majority of the logical side of the application
+// It also contains and builds the state of the app
 class App extends Component {
   constructor() {
     super();
@@ -66,7 +70,9 @@ class App extends Component {
     this.onButtonSubmit = this.onButtonSubmit.bind(this);
   }
 
-  // a method for loading users. activated through signin signup or cookies
+  // a method for loading users. activated through signin, signup or session storage
+  // the input data is a user object. 
+  // the output is setting the user state
   loadUser = data => {
     this.setState({
       user: {
@@ -81,8 +87,8 @@ class App extends Component {
 
   //a method for calculating face location in the photo
   //the input is the response of clarifai api
+  //the output is a css object notation for box display
   calculateFaceLocation = faceData => {
-    console.log(faceData)
     //using first face for calculation
     //can be scaled up for more than one face
     const image = document.getElementById("inputimage");
@@ -97,6 +103,7 @@ class App extends Component {
     };
   };
   //uses calculateFaceLocation method for box display
+  //input is the css object notaion 
   displayFaceBox = box => {
     this.setState({ box: box });
   };
@@ -122,6 +129,8 @@ class App extends Component {
   }
 
   //an event listener for image upload
+  // input is the upload event
+  // output is setting the uploadURL state
   OnImageUpload = async (event) => {
     const files = event.target.files;
     const data = new FormData();
@@ -142,8 +151,10 @@ class App extends Component {
 }
 
 // event listener for handeling the detect option
+// when invoked the face recognition process is started
 onButtonSubmit = () => {
   //the first few lines chooses proper URL from pasted or uploaded image
+  // this is to deal with the case of both pasted and uploaded image url
   let URL = "";
   if(this.state.input!==initialInput){
     URL = this.state.input
@@ -151,7 +162,7 @@ onButtonSubmit = () => {
       URL = this.state.uploadURL;
     }
     //using setState than invoking callback function for actual detect process
-    // isFaceFound set to false for rerendering success banner
+    // isFaceFound set to false for rerendering the Success banner
     this.setState({ imageURL: URL, isFaceFound: false }, () => {
       //fetch call for server at imageURL route - the clarifai api process
       fetch("https://agile-eyrie-66946.herokuapp.com/imageURL", {
@@ -163,6 +174,8 @@ onButtonSubmit = () => {
       })
         .then(response => response.json())
         .then(response => {
+          //this is the response written by me in the backend side when the API response is
+          // an error of some sort (no face/bad url)
           if (response !== "unable to work with Clarifai API") {
             //if the response is positive (face is found)
             //this fetch call increments user rank
@@ -196,6 +209,7 @@ onButtonSubmit = () => {
     };
     
     // event listener for keyboard submission
+    // enabling enter button submission
     handleKeyUp = event => {
       if (event.keyCode === 13) {
         this.onButtonSubmit();
@@ -205,6 +219,8 @@ onButtonSubmit = () => {
     // method for routing using states
     // in the future it is possible to use React-Router package
     // thus removing routing with state management
+    // the input is the destination page
+    // the output is setting the proper route
     onRouteChange = dest => {
       if (dest === "signout") {
         //clearing user cookie

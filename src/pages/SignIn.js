@@ -23,11 +23,18 @@ class SignIn extends Component {
 		}
 	}
 
+	// an event handler for form change
+	// the input is the textbox input
+	// the output is setting the proper form state
 	handleChange = (event) => {
         const { value, name } = event.target
         this.setState({ [name]: value })
     }
 
+	//an event handler for the form submission process
+	// invoking the signin backend process
+	// the input is the form submit
+	// the output is setting the user and route state
 	handleSubmit = async (event) => {
         event.preventDefault();
         const { email, password } = this.state;

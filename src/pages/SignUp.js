@@ -17,9 +17,13 @@ class SignUp extends Component {
     }
 
 	// this method is the event listener for submiting registration form
+	// invoking the register backend process
+	// the input is the form submit
+	// the output is setting the user and route state
     handleSubmit = async (event) => {
         event.preventDefault();
-        const { displayName, email, password, confirmPassword } = this.state;
+		const { displayName, email, password, confirmPassword } = this.state;
+		//frontend password check
         if(password!==confirmPassword) {
             alert("Passwords don't match!");
             return;
@@ -53,7 +57,9 @@ class SignUp extends Component {
         this.setState({...initialState,isLoading: true});
     }
 
-	//event listener for input change
+	// an event handler for form change
+	// the input is the textbox input
+	// the output is setting the proper form state
     handleChange = (event) => {
         const { value, name } = event.target
         this.setState({ [name]: value })

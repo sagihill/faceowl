@@ -1,5 +1,6 @@
 import React from 'react';
 
+//navigation is responsive to current route
 const Navigation = ({onRouteChange,isSignedIn}) => {
 		if(isSignedIn){
 			return (
