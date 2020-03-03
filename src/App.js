@@ -61,7 +61,7 @@ const initialState = {
   }
 };
 
-//This is the main class App which hold the majority of the logical side of the application
+//This is the main class App which holds the majority of the logical side of the application
 // It also contains and builds the state of the app
 class App extends Component {
   constructor() {
