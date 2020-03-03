@@ -6,7 +6,7 @@ import SignUp from "./pages/SignUp";
 import Navigation from "./components/Navigation/Navigation";
 import Hompage from "./pages/Homepage";
 
-//Setup code for PArticles package
+//Setup code for Particles package
 const particlesOptions = {
   particles: {
     number: {
