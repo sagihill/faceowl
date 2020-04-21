@@ -1,0 +1,374 @@
+/* # Large Desktop */
+@media only screen and (min-device-width: 1500px) {
+  .face_recognition_panel-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+  }
+
+  .url_input-browse_button_input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 5em;
+  
+  }
+
+  .find-button {
+    width: 5em;
+    height: 1.8em;
+    padding: 0.3em 1.04em;
+    margin-top: 0.5em;
+
+    color: rgb(228, 185, 112);
+    background-color: rgb(167, 58, 224);
+    border: none;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em #999;
+
+    font-family: 'Teko';
+    font-size: 2.8em;
+    text-align: center;
+    text-shadow: 1px 1px rgb(40, 20, 42);
+    text-decoration: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+  
+  .find-button:hover {
+    color: rgb(167, 58, 224);
+    background-color: rgb(228, 185, 112);
+  }
+    
+  .find-button:active {
+    background-color: #C3305D;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+  
+  }
+  
+/* # Desktop */
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1500px) {
+
+  .face_recognition_panel-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+  }
+
+  .url_input-browse_button_input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 5em;
+  }
+
+  .find-button {
+    width: 5em;
+    height: 1.8em;
+    padding: 0.3em 1.04em;
+    margin-top: 0.5em;
+
+    color: rgb(228, 185, 112);
+    background-color: rgb(167, 58, 224);
+    border: none;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em #999;
+
+    font-family: 'Teko';
+    font-size: 2.4em;
+    text-align: center;
+    text-shadow: 1px 1px rgb(40, 20, 42);
+    text-decoration: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+  
+  .find-button:hover {
+    color: rgb(167, 58, 224);
+    background-color: rgb(228, 185, 112);
+  }
+    
+  .find-button:active {
+    background-color: #C3305D;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+}
+
+/* # Tablet - Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+and (orientation: landscape) {
+  .face_recognition_panel-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.8em;
+  }
+
+  .url_input-browse_button_input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    height: 5em;
+  }
+
+  .find-button {
+    width: 5em;
+    height: 1.8em;
+    padding: 0.3em 1.04em;
+    margin-top: 0.5em;
+
+    color: rgb(228, 185, 112);
+    background-color: rgb(167, 58, 224);
+    border: none;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em #999;
+
+    font-family: 'Teko';
+    font-size: 2.4em;
+    text-align: center;
+    text-shadow: 1px 1px rgb(40, 20, 42);
+    text-decoration: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+  
+  .find-button:hover {
+    color: rgb(167, 58, 224);
+    background-color: rgb(228, 185, 112);
+  }
+    
+  .find-button:active {
+    background-color: #C3305D;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+}
+
+
+/* # Tablet - Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+and (orientation: portrait) {
+  .face_recognition_panel-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.8em;
+  }
+
+  .url_input-browse_button_input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    height: 5em;
+  }
+
+  .find-button {
+    width: 5em;
+    height: 1.8em;
+    padding: 0.3em 1.04em;
+    margin-top: 0.5em;
+
+    color: rgb(228, 185, 112);
+    background-color: rgb(167, 58, 224);
+    border: none;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em #999;
+
+    font-family: 'Teko';
+    font-size: 2.4em;
+    text-align: center;
+    text-shadow: 1px 1px rgb(40, 20, 42);
+    text-decoration: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+  
+  .find-button:hover {
+    color: rgb(167, 58, 224);
+    background-color: rgb(228, 185, 112);
+  }
+    
+  .find-button:active {
+    background-color: #C3305D;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+}
+
+/* # Big Mobile - Portrait*/
+@media only screen and (min-width: 395px) and (max-width: 480px) and (orientation: portrait) {
+  .face_recognition_panel-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-bottom: 1em;
+  }
+
+  .url_input-browse_button_input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    height: 5em;
+  }
+
+  .find-button {
+    width: 5em;
+    height: 1.8em;
+    padding: 0.3em 1.04em;
+    margin-top: 0.0em;
+
+    color: rgb(228, 185, 112);
+    background-color: rgb(167, 58, 224);
+    border: none;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em #999;
+
+    font-family: 'Teko';
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 1px 1px rgb(40, 20, 42);
+    text-decoration: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+  
+  .find-button:hover {
+    color: rgb(167, 58, 224);
+    background-color: rgb(228, 185, 112);
+  }
+    
+  .find-button:active {
+    background-color: #C3305D;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+}
+
+/* # Small Mobile - Portrait*/
+@media only screen and (max-width: 395px) and (orientation: portrait) {
+  .face_recognition_panel-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: 100%;
+  }
+
+  .url_input-browse_button_input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    height: 3.5em;
+    margin-top: 0.5em;
+  }
+
+  .find-button {
+    width: 4.5em;
+    height: 1.8em;
+    padding: 0.3em 1.04em;
+
+    color: rgb(228, 185, 112);
+    background-color: rgb(167, 58, 224);
+    border: none;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em #999;
+
+    font-family: 'Teko';
+    font-size: 1.2em;
+    text-align: center;
+    text-shadow: 1px 1px rgb(40, 20, 42);
+    text-decoration: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+  
+  .find-button:hover {
+    color: rgb(167, 58, 224);
+    background-color: rgb(228, 185, 112);
+  }
+    
+  .find-button:active {
+    background-color: #C3305D;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+}
+
+/* #  Mobile - Landscape*/
+@media only screen and (max-width: 823px) and (orientation: landscape) {
+  .face_recognition_panel-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: 50%;
+    margin-top: 0.2em;
+  }
+
+  .url_input-browse_button_input-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    height: 3.5em;
+    margin-top: 0.5em;
+  }
+
+  .find-button {
+    width: 4.5em;
+    height: 1.8em;
+    padding: 0.3em 1.04em;
+
+    color: rgb(228, 185, 112);
+    background-color: rgb(167, 58, 224);
+    border: none;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em #999;
+
+    font-family: 'Teko';
+    font-size: 1.2em;
+    text-align: center;
+    text-shadow: 1px 1px rgb(40, 20, 42);
+    text-decoration: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+  
+  .find-button:hover {
+    color: rgb(167, 58, 224);
+    background-color: rgb(228, 185, 112);
+  }
+    
+  .find-button:active {
+    background-color: #C3305D;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+}
+

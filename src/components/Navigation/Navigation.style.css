@@ -1,0 +1,340 @@
+/* # Large Desktop */
+@media only screen and (min-device-width: 1500px) {
+  .navbar-login-register,
+  .navbar-homepage {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 60vw;
+    min-width: 65em;
+    margin: 0 auto;
+  }
+
+  .navbar-button-login {
+    margin-right: 1em;
+  }
+
+  .navbar-button {
+    margin-top: 1em;
+    padding: 0.3em 1.04em;
+    width: 4.5em;
+    height: 1.7em;
+
+    color: rgb(91, 47, 96);
+    background-color: rgb(254, 187, 109);
+    border: none;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em #999;
+
+    font-family: "Teko";
+    font-size: 1.8em;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+
+  .navbar-button:hover {
+    color: rgb(254, 187, 109);
+    background-color: rgb(91, 47, 96);
+  }
+
+  .navbar-button:active {
+    background-color: rgb(91, 47, 96);
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+}
+
+/* # Desktop */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1500px) {
+  .navbar-login-register,
+  .navbar-homepage {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 70vw;
+    min-width: 51em;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navbar-button-login {
+    margin-right: 1em;
+  }
+
+  .navbar-button {
+    margin-top: 1em;
+    padding: 0.3em 1.04em;
+    width: 5em;
+    height: 1.8em;
+
+    color: rgb(91, 47, 96);
+    background-color: rgb(254, 187, 109);
+    border: none;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em #999;
+
+    font-family: "Teko";
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+
+  .navbar-button:hover {
+    color: rgb(254, 187, 109);
+    background-color: rgb(91, 47, 96);
+  }
+
+  .navbar-button:active {
+    background-color: rgb(91, 47, 96);
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+}
+
+/* # Tablet - Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+and (orientation: landscape){
+  .navbar-login-register,
+  .navbar-homepage {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 70vw;
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+
+  .navbar-button-login {
+    margin-right: 1em;
+  }
+
+  .navbar-button {
+    margin-top: 1em;
+    padding: 0.3em 1.04em;
+    width: 5em;
+    height: 1.8em;
+
+    color: rgb(91, 47, 96);
+    background-color: rgb(254, 187, 109);
+    border: none;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em #999;
+
+    font-family: "Teko";
+    font-size: 1.3em;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+
+  .navbar-button:hover {
+    color: rgb(254, 187, 109);
+    background-color: rgb(91, 47, 96);
+  }
+
+  .navbar-button:active {
+    background-color: rgb(91, 47, 96);
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+}
+
+/* # Tablet - Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+and (orientation: portrait){
+  .navbar-login-register,
+  .navbar-homepage {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 85vw;
+    margin: 0 auto;
+  }
+
+  .navbar-button-login {
+    margin-right: 1em;
+  }
+
+  .navbar-button {
+    padding: 0.3em 1.04em;
+    width: 5em;
+    height: 1.8em;
+
+    color: rgb(91, 47, 96);
+    background-color: rgb(254, 187, 109);
+    border: none;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em #999;
+
+    font-family: "Teko";
+    font-size: 1.3em;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+
+  .navbar-button:hover {
+    color: rgb(254, 187, 109);
+    background-color: rgb(91, 47, 96);
+  }
+
+  .navbar-button:active {
+    background-color: rgb(91, 47, 96);
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+}
+
+
+/* # Big Mobile - portrait*/
+@media only screen and (min-width: 395px) and (max-width: 480px) and (orientation: portrait) {
+  .navbar-login-register,
+  .navbar-homepage {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 85vw;
+    margin: 0 auto;
+  }
+
+  .navbar-button-login {
+    margin-right: .5em;
+  }
+
+  .navbar-button {
+    width: 5em;
+    height: 1.8em;
+    padding: 0.3em 1.04em;
+
+    color: rgb(91, 47, 96);
+    background-color: rgb(254, 187, 109);
+    border: none;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em #999;
+
+    font-family: "Teko";
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+
+  .navbar-button:hover {
+    color: rgb(254, 187, 109);
+    background-color: rgb(91, 47, 96);
+  }
+
+  .navbar-button:active {
+    background-color: rgb(91, 47, 96);
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+}
+
+/* # Small Mobile - portrait*/
+@media only screen and (max-width: 395px) and (orientation: portrait) {
+  .navbar-login-register,
+  .navbar-homepage {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 85vw;
+    margin: 0 auto;
+  }
+
+  .navbar-button-login {
+    margin-right: .5em;
+  }
+
+  .navbar-button {
+    width: 4.3em;
+    height: 1.8em;
+    padding: 0.3em 0em;
+
+    color: rgb(91, 47, 96);
+    background-color: rgb(254, 187, 109);
+    border: none;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em #999;
+
+    font-family: "Teko";
+    font-size: .85em;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+
+  .navbar-button:hover {
+    color: rgb(254, 187, 109);
+    background-color: rgb(91, 47, 96);
+  }
+
+  .navbar-button:active {
+    background-color: rgb(91, 47, 96);
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+}
+
+/* # Mobile - landscape*/
+@media only screen and (max-width: 823px) and (orientation: landscape) {
+  .navbar-login-register,
+  .navbar-homepage {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 85vw;
+    margin: 0 auto;
+  }
+
+  .navbar-button-login {
+    margin-right: .5em;
+  }
+
+  .navbar-button {
+    width: 4.3em;
+    height: 1.6em;
+    padding: 0.3em 0em;
+
+    color: rgb(91, 47, 96);
+    background-color: rgb(254, 187, 109);
+    border: none;
+    border-radius: 0.6em;
+    box-shadow: 0 0.2em #999;
+
+    font-family: "Teko";
+    font-size: .85em;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+
+  .navbar-button:hover {
+    color: rgb(254, 187, 109);
+    background-color: rgb(91, 47, 96);
+  }
+
+  .navbar-button:active {
+    background-color: rgb(91, 47, 96);
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+}

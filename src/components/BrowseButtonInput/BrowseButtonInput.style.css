@@ -1,0 +1,844 @@
+/* # Large Desktop */
+@media only screen and (min-device-width: 1500px) {
+  .browse_button_input-container {
+    width: 30%;
+    height: 100%;
+  }
+
+  .normal-browse-button {
+    padding: 0.8em;
+    height: 50%;
+    width: 100%;
+    color: transparent;
+  }
+
+  .normal-browse-button::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .normal-browse-button::before {
+    padding: 0.3em 1.04em;
+    margin: 1em;
+
+    color: white;
+    background-color: #f0445e;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+
+    content: "Browse";
+    font-family: "Teko";
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: none;
+
+    -webkit-user-select: none;
+    cursor: pointer;
+  }
+  .normal-browse-button:hover::before {
+    background-color: #c3305d;
+  }
+  .normal-browse-button:active {
+    transform: translateY(0.16em);
+  }
+  .normal-browse-button:active::before {
+    background-color: #c3305d;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+
+  /*-------------------Uploading Button--------------------------*/
+
+  @-webkit-keyframes uploading-image-animation-large {
+    0% {
+      background-color: rgb(199, 38, 62);
+    }
+    50% {
+      background-color: #f0445e;
+      font-size: 2em;
+    }
+    100% {
+      background-color: rgb(199, 38, 62);
+    }
+  }
+
+  @keyframes uploading-image-animation-large {
+    0% {
+      background-color: rgb(199, 38, 62);
+    }
+    50% {
+      background-color: #f0445e;
+      font-size: 1.8em;
+    }
+    100% {
+      background-color: rgb(199, 38, 62);
+    }
+  }
+
+  .loading-browse-button {
+    padding: 0.8em;
+    height: 50%;
+    width: 100%;
+    color: transparent;
+  }
+  .loading-browse-button::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .loading-browse-button::before {
+    padding: 0.3em 1.04em;
+    margin: 1em;
+
+    color: white;
+    background-color: #f0445e;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+
+    content: "Uploading";
+    font-family: "Teko";
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: none;
+
+    -webkit-user-select: none;
+    cursor: pointer;
+
+    animation: uploading-image-animation-large 1300ms infinite;
+    -webkit-animation: uploading-image-animation-large 1300ms infinite;
+    -moz-animation: uploading-image-animation-large 1300ms infinite;
+    -o-animation: uploading-image-animation-large 1300ms infinite;
+  }
+}
+
+/* # Desktop */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1500px) {
+  .browse_button_input-container {
+    width: 30%;
+    height: 100%;
+  }
+
+  .normal-browse-button {
+    padding: 0.8em;
+    padding-top: 1.1em;
+    height: 50%;
+    width: 100%;
+    color: transparent;
+  }
+
+  .normal-browse-button::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .normal-browse-button::before {
+    padding: 0.3em 1.04em;
+    margin: 1em;
+
+    color: white;
+    background-color: #f0445e;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+
+    content: "Browse";
+    font-family: "Teko";
+    font-size: 1.2em;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: none;
+
+    -webkit-user-select: none;
+    cursor: pointer;
+  }
+  .normal-browse-button:hover::before {
+    background-color: #c3305d;
+  }
+  .normal-browse-button:active {
+    transform: translateY(0.16em);
+  }
+  .normal-browse-button:active::before {
+    background-color: #c3305d;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+
+  /*-------------------Uploading Button--------------------------*/
+
+  @-webkit-keyframes uploading-image-animation-large {
+    0% {
+      background-color: rgb(199, 38, 62);
+    }
+    50% {
+      background-color: #f0445e;
+      font-size: 1.4em;
+    }
+    100% {
+      background-color: rgb(199, 38, 62);
+    }
+  }
+
+  @keyframes uploading-image-animation-large {
+    0% {
+      background-color: rgb(199, 38, 62);
+    }
+    50% {
+      background-color: #f0445e;
+      font-size: 1.4em;
+    }
+    100% {
+      background-color: rgb(199, 38, 62);
+    }
+  }
+
+  .loading-browse-button {
+    height: 50%;
+    width: 100%;
+    padding: 0.8em;
+    padding-top: 1.1em;
+
+    color: transparent;
+  }
+  .loading-browse-button::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .loading-browse-button::before {
+    padding: 0.3em 1.04em;
+    margin: 1em;
+
+    color: white;
+    background-color: #f0445e;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+
+    content: "Uploading";
+    font-family: "Teko";
+    font-size: 1.2em;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: none;
+
+    -webkit-user-select: none;
+    cursor: pointer;
+
+    animation: uploading-image-animation-large 1300ms infinite;
+    -webkit-animation: uploading-image-animation-large 1300ms infinite;
+    -moz-animation: uploading-image-animation-large 1300ms infinite;
+    -o-animation: uploading-image-animation-large 1300ms infinite;
+  }
+}
+
+/* # Tablet - Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+and (orientation: landscape) {
+  .browse_button_input-container {
+    width: 30%;
+    height: 100%;
+  }
+
+  .normal-browse-button {
+    padding-right: 0.8em;
+    padding-left: 0.2em;
+    padding-top: 1.1em;
+    height: 50%;
+    width: 100%;
+    color: transparent;
+  }
+
+  .normal-browse-button::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .normal-browse-button::before {
+    padding: 0.3em 1.04em;
+    margin: 1em;
+
+    color: white;
+    background-color: #f0445e;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+
+    content: "Browse";
+    font-family: "Teko";
+    font-size: 1.2em;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: none;
+
+    -webkit-user-select: none;
+    cursor: pointer;
+  }
+  .normal-browse-button:hover::before {
+    background-color: #c3305d;
+  }
+  .normal-browse-button:active {
+    transform: translateY(0.16em);
+  }
+  .normal-browse-button:active::before {
+    background-color: #c3305d;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+
+  /*-------------------Uploading Button--------------------------*/
+
+  @-webkit-keyframes uploading-image-animation-large {
+    0% {
+      background-color: rgb(199, 38, 62);
+    }
+    50% {
+      background-color: #f0445e;
+      font-size: 1.4em;
+    }
+    100% {
+      background-color: rgb(199, 38, 62);
+    }
+  }
+
+  @keyframes uploading-image-animation-large {
+    0% {
+      background-color: rgb(199, 38, 62);
+    }
+    50% {
+      background-color: #f0445e;
+      font-size: 1.4em;
+    }
+    100% {
+      background-color: rgb(199, 38, 62);
+    }
+  }
+
+  .loading-browse-button {
+    height: 50%;
+    width: 100%;
+    padding-right: 0.8em;
+    padding-top: 1.1em;
+
+    color: transparent;
+  }
+  .loading-browse-button::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .loading-browse-button::before {
+    padding: 0.3em 1.04em;
+    margin: 1em;
+
+    color: white;
+    background-color: #f0445e;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+
+    content: "Uploading";
+    font-family: "Teko";
+    font-size: 1.2em;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: none;
+
+    -webkit-user-select: none;
+    cursor: pointer;
+
+    animation: uploading-image-animation-large 1300ms infinite;
+    -webkit-animation: uploading-image-animation-large 1300ms infinite;
+    -moz-animation: uploading-image-animation-large 1300ms infinite;
+    -o-animation: uploading-image-animation-large 1300ms infinite;
+  }
+}
+
+
+/* # Tablet - Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+and (orientation: portrait) {
+  .browse_button_input-container {
+    width: 40%;
+    height: 100%;
+  }
+
+  .normal-browse-button {
+    padding-right: 0.8em;
+    padding-left: 0.2em;
+    padding-top: 1.1em;
+    height: 50%;
+    width: 100%;
+    color: transparent;
+  }
+
+  .normal-browse-button::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .normal-browse-button::before {
+    padding: 0.3em 1.04em;
+    margin: 1em;
+
+    color: white;
+    background-color: #f0445e;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+
+    content: "Browse";
+    font-family: "Teko";
+    font-size: 1em;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: none;
+
+    -webkit-user-select: none;
+    cursor: pointer;
+  }
+  .normal-browse-button:hover::before {
+    background-color: #c3305d;
+  }
+  .normal-browse-button:active {
+    transform: translateY(0.16em);
+  }
+  .normal-browse-button:active::before {
+    background-color: #c3305d;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+
+  /*-------------------Uploading Button--------------------------*/
+
+  @-webkit-keyframes uploading-image-animation-large {
+    0% {
+      background-color: rgb(199, 38, 62);
+    }
+    50% {
+      background-color: #f0445e;
+      font-size: 1.1em;
+    }
+    100% {
+      background-color: rgb(199, 38, 62);
+    }
+  }
+
+  @keyframes uploading-image-animation-large {
+    0% {
+      background-color: rgb(199, 38, 62);
+    }
+    50% {
+      background-color: #f0445e;
+      font-size: 1.2em;
+    }
+    100% {
+      background-color: rgb(199, 38, 62);
+    }
+  }
+
+  .loading-browse-button {
+    height: 50%;
+    width: 100%;
+    padding-right: 0.8em;
+    padding-top: 1.1em;
+
+    color: transparent;
+  }
+  .loading-browse-button::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .loading-browse-button::before {
+    padding: 0.3em 1.04em;
+    margin: 1em;
+
+    color: white;
+    background-color: #f0445e;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+
+    content: "Uploading";
+    font-family: "Teko";
+    font-size: 1em;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: none;
+
+    -webkit-user-select: none;
+    cursor: pointer;
+
+    animation: uploading-image-animation-large 1300ms infinite;
+    -webkit-animation: uploading-image-animation-large 1300ms infinite;
+    -moz-animation: uploading-image-animation-large 1300ms infinite;
+    -o-animation: uploading-image-animation-large 1300ms infinite;
+  }
+}
+
+/* # Big Mobile - Portrait*/
+@media only screen and (min-width: 395px) and (max-width: 480px) and (orientation: portrait) {
+  .browse_button_input-container {
+    width: 30%;
+    height: 100%;
+  }
+
+  .normal-browse-button {
+    padding-right: 0.8em;
+    padding-left: 0.2em;
+    padding-top: 1.1em;
+    height: 50%;
+    width: 100%;
+    color: transparent;
+  }
+
+  .normal-browse-button::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .normal-browse-button::before {
+    padding: 0.3em 1.04em;
+    margin: 1em;
+
+    color: white;
+    background-color: #f0445e;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+
+    content: "Browse";
+    font-family: "Teko";
+    font-size: 1em;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: none;
+
+    -webkit-user-select: none;
+    cursor: pointer;
+  }
+  .normal-browse-button:hover::before {
+    background-color: #c3305d;
+  }
+  .normal-browse-button:active {
+    transform: translateY(0.16em);
+  }
+  .normal-browse-button:active::before {
+    background-color: #c3305d;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+
+  /*-------------------Uploading Button--------------------------*/
+
+  @-webkit-keyframes uploading-image-animation-large {
+    0% {
+      background-color: rgb(199, 38, 62);
+    }
+    50% {
+      background-color: #f0445e;
+      font-size: 1.1em;
+    }
+    100% {
+      background-color: rgb(199, 38, 62);
+    }
+  }
+
+  @keyframes uploading-image-animation-large {
+    0% {
+      background-color: rgb(199, 38, 62);
+    }
+    50% {
+      background-color: #f0445e;
+      font-size: 1.2em;
+    }
+    100% {
+      background-color: rgb(199, 38, 62);
+    }
+  }
+
+  .loading-browse-button {
+    height: 50%;
+    width: 100%;
+    padding-right: 0.8em;
+    padding-top: 1.1em;
+
+    color: transparent;
+  }
+  .loading-browse-button::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .loading-browse-button::before {
+    padding: 0.3em 1.04em;
+    margin: 1em;
+
+    color: white;
+    background-color: #f0445e;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+
+    content: "Uploading";
+    font-family: "Teko";
+    font-size: 1em;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: none;
+
+    -webkit-user-select: none;
+    cursor: pointer;
+
+    animation: uploading-image-animation-large 1300ms infinite;
+    -webkit-animation: uploading-image-animation-large 1300ms infinite;
+    -moz-animation: uploading-image-animation-large 1300ms infinite;
+    -o-animation: uploading-image-animation-large 1300ms infinite;
+  }
+}
+
+/* # Small Mobile - Portrait*/
+@media only screen and (max-width: 395px) and (orientation: portrait) {
+  .browse_button_input-container {
+    width: 30%;
+    height: 100%;
+  }
+
+  .normal-browse-button {
+    padding-right: 0.8em;
+    padding-left: 0.2em;
+    padding-top: 0.5em;
+    height: 50%;
+    width: 100%;
+    color: transparent;
+  }
+
+  .normal-browse-button::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .normal-browse-button::before {
+    padding: 0.3em 1.04em;
+    margin: 1em;
+
+    color: white;
+    background-color: #f0445e;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+
+    content: "Browse";
+    font-family: "Teko";
+    font-size: .75em;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: none;
+
+    -webkit-user-select: none;
+    cursor: pointer;
+  }
+  .normal-browse-button:hover::before {
+    background-color: #c3305d;
+  }
+  .normal-browse-button:active {
+    transform: translateY(0.16em);
+  }
+  .normal-browse-button:active::before {
+    background-color: #c3305d;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+
+  /*-------------------Uploading Button--------------------------*/
+
+  @-webkit-keyframes uploading-image-animation-large {
+    0% {
+      background-color: rgb(199, 38, 62);
+    }
+    50% {
+      background-color: #f0445e;
+      font-size: 1.1em;
+    }
+    100% {
+      background-color: rgb(199, 38, 62);
+    }
+  }
+
+  @keyframes uploading-image-animation-large {
+    0% {
+      background-color: rgb(199, 38, 62);
+    }
+    50% {
+      background-color: #f0445e;
+      font-size: .95em;
+    }
+    100% {
+      background-color: rgb(199, 38, 62);
+    }
+  }
+
+  .loading-browse-button {
+    height: 50%;
+    width: 100%;
+    padding-right: 0.8em;
+    padding-top: 0.5em;
+
+    color: transparent;
+  }
+  .loading-browse-button::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .loading-browse-button::before {
+    padding: 0.3em 1.04em;
+    margin: 1em;
+
+    color: white;
+    background-color: #f0445e;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+
+    content: "Uploading";
+    font-family: "Teko";
+    font-size: .75em;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: none;
+
+    -webkit-user-select: none;
+    cursor: pointer;
+
+    animation: uploading-image-animation-large 1300ms infinite;
+    -webkit-animation: uploading-image-animation-large 1300ms infinite;
+    -moz-animation: uploading-image-animation-large 1300ms infinite;
+    -o-animation: uploading-image-animation-large 1300ms infinite;
+  }
+}
+
+/* # Mobile - Landscape*/
+@media only screen and (max-width: 823px) and (orientation: landscape) {
+  .browse_button_input-container {
+    width: 30%;
+    height: 100%;
+  }
+
+  .normal-browse-button {
+    padding-right: 0.8em;
+    padding-left: 0.2em;
+    padding-top: 0.5em;
+    height: 50%;
+    width: 100%;
+    color: transparent;
+  }
+
+  .normal-browse-button::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .normal-browse-button::before {
+    padding: 0.3em 1.04em;
+    margin: 1em;
+
+    color: white;
+    background-color: #f0445e;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+
+    content: "Browse";
+    font-family: "Teko";
+    font-size: .75em;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: none;
+
+    -webkit-user-select: none;
+    cursor: pointer;
+  }
+  .normal-browse-button:hover::before {
+    background-color: #c3305d;
+  }
+  .normal-browse-button:active {
+    transform: translateY(0.16em);
+  }
+  .normal-browse-button:active::before {
+    background-color: #c3305d;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+
+  /*-------------------Uploading Button--------------------------*/
+
+  @-webkit-keyframes uploading-image-animation-large {
+    0% {
+      background-color: rgb(199, 38, 62);
+    }
+    50% {
+      background-color: #f0445e;
+      font-size: .85em;
+    }
+    100% {
+      background-color: rgb(199, 38, 62);
+    }
+  }
+
+  @keyframes uploading-image-animation-large {
+    0% {
+      background-color: rgb(199, 38, 62);
+    }
+    50% {
+      background-color: #f0445e;
+      font-size: .85em;
+    }
+    100% {
+      background-color: rgb(199, 38, 62);
+    }
+  }
+
+  .loading-browse-button {
+    height: 50%;
+    width: 100%;
+    padding-right: 0.8em;
+    padding-top: 0.5em;
+
+    color: transparent;
+  }
+  .loading-browse-button::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .loading-browse-button::before {
+    padding: 0.3em 1.04em;
+    margin: 1em;
+
+    color: white;
+    background-color: #f0445e;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+
+    content: "Uploading";
+    font-family: "Teko";
+    font-size: .75em;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    white-space: nowrap;
+    outline: none;
+
+    -webkit-user-select: none;
+    cursor: pointer;
+
+    animation: uploading-image-animation-large 1100ms infinite;
+    -webkit-animation: uploading-image-animation-large 1100ms infinite;
+    -moz-animation: uploading-image-animation-large 1100ms infinite;
+    -o-animation: uploading-image-animation-large 1100ms infinite;
+  }
+}

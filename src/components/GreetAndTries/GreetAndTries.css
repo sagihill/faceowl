@@ -1,0 +1,256 @@
+/* # Large Desktop */
+@media only screen and (min-device-width: 1500px) {
+  .greet_and_tries-container {
+    display: flex;
+    flex-direction: column;
+
+    height: 50%;
+  }
+
+  .greet-name {
+    padding-bottom: 0.3em;
+
+    font-family: "Pacifico";
+    font-size: 4.5em;
+    color: black;
+  }
+
+  .tries-hurray-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tries-container {
+    margin-bottom: 0.4em;
+
+    font-family: "Teko";
+    font-size: 2.5em;
+  }
+
+  .greet-hurray {
+    font-family: "Teko";
+    font-size: 4em;
+    font-weight: bold;
+  }
+}
+
+/* # Desktop */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1500px) {
+  .greet_and_tries-container {
+    display: flex;
+    flex-direction: column;
+
+    height: 50%;
+  }
+
+  .greet-name {
+    padding-bottom: 0.25em;
+
+    font-family: "Pacifico";
+    font-size: 3.8em;
+    color: black;
+  }
+
+  .tries-hurray-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tries-container {
+    margin-bottom: 0.3em;
+    font-family: "Teko";
+
+    font-size: 2em;
+  }
+
+  .greet-hurray {
+    font-family: "Teko";
+    font-size: 3em;
+    font-weight: bold;
+  }
+}
+
+/* # Tablet - Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+and (orientation: landscape) {
+  .greet_and_tries-container {
+    display: flex;
+    flex-direction: column;
+
+    height: 50%;
+  }
+
+  .greet-name {
+    padding-bottom: 0.35em;
+
+    font-family: "Pacifico";
+    font-size: 4.4em;
+    color: black;
+  }
+
+  .tries-hurray-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tries-container {
+    margin-bottom: 0.6em;
+    font-family: "Teko";
+
+    font-size: 2em;
+  }
+
+  .greet-hurray {
+    font-family: "Teko";
+    font-size: 3.5em;
+    font-weight: bold;
+  }
+}
+
+
+/* # Tablet - Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+and (orientation: portrait) {
+  .greet_and_tries-container {
+    display: flex;
+    flex-direction: column;
+
+    height: 50%;
+  }
+
+  .greet-name {
+    padding-bottom: 0.35em;
+
+    font-family: "Pacifico";
+    font-size: 2.8em;
+    color: black;
+  }
+
+  .tries-hurray-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tries-container {
+    margin-bottom: 0.6em;
+    font-family: "Teko";
+
+    font-size: 1.8em;
+  }
+
+  .greet-hurray {
+    font-family: "Teko";
+    font-size: 3em;
+    font-weight: bold;
+  }
+}
+
+/* # Big Mobile - portrait*/
+@media only screen and (min-width: 395px) and (max-width: 480px) and (orientation: portrait) {
+  .greet_and_tries-container {
+    display: flex;
+    flex-direction: column;
+
+    height: 50%;
+  }
+
+  .greet-name {
+    padding-bottom: 0.35em;
+
+    font-family: "Pacifico";
+    font-size: 2.2em;
+    color: black;
+  }
+
+  .tries-hurray-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tries-container {
+    margin-bottom: 0.3em;
+
+    font-family: "Teko";
+    font-size: 1.5em;
+  }
+
+  .greet-hurray {
+    font-family: "Teko";
+    font-size: 2em;
+    font-weight: bold;
+  }
+}
+
+/* # Small Mobile - portrait*/
+@media only screen and (max-width: 395px) and (orientation: portrait) {
+  .greet_and_tries-container {
+    display: flex;
+    flex-direction: column;
+
+    height: 50%;
+  }
+
+  .greet-name {
+    padding-bottom: 0.35em;
+
+    font-family: "Pacifico";
+    font-size: 2.1em;
+    color: black;
+  }
+
+  .tries-hurray-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tries-container {
+    margin-bottom: 0.3em;
+
+    font-family: "Teko";
+    font-size: 1.3em;
+  }
+
+  .greet-hurray {
+    font-family: "Teko";
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+}
+
+/* # Mobile landscape*/
+@media only screen and (max-width: 823px) and (orientation: landscape) {
+  .greet_and_tries-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 50%;
+  }
+
+  .greet-name {
+    padding-bottom: 0.35em;
+
+    font-family: "Pacifico";
+    font-size: 2.1em;
+    color: black;
+  }
+
+  .tries-hurray-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tries-container {
+    margin-bottom: 0.3em;
+
+    font-family: "Teko";
+    font-size: 1.3em;
+  }
+
+  .greet-hurray {
+    font-family: "Teko";
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+}
+

@@ -1,0 +1,958 @@
+/* # Large Desktop  */
+@media only screen and (min-device-width: 1500px) {
+  .signin-signup-page-container {
+    width: 60vw;
+    min-width: 65em;
+    height: 70vh;
+    min-height: 38em;
+    margin: 0 auto;
+    padding-top: 1em;
+  }
+
+  .signin-signup-page-card {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.85) 50%,
+      rgba(254, 187, 109, 0.95) 50%
+    );
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #20003e;
+  }
+
+  .signin-signup-form-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    /* min-width: 12em; */
+    height: 100%;
+    padding: 1em 2em;
+
+    overflow: hidden;
+  }
+
+  .company-trademark {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-right: 1.5em;
+  }
+
+  .company-logo {
+    align-self: flex-end;
+    flex-shrink: 0;
+    width: 5em;
+    height: 5em;
+    margin-bottom: 0.1em;
+    margin-right: 0.5em;
+
+    background-image: url(../../assets/owl_bnw.svg);
+    background-repeat: no-repeat;
+  }
+
+  .company-name {
+    padding-top: 0.6em;
+
+    font-size: 5em;
+    font-family: "Pacifico";
+    color: black;
+  }
+
+  .side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+    min-width: 12em;
+    height: 100%;
+    padding: 3em 3em;
+
+    color: rgb(122, 45, 115);
+  }
+
+  .side-greeting {
+    margin-bottom: 0.2em;
+
+    font-family: "Teko-Semi-Bold";
+    font-size: 4em;
+  }
+
+  .side-span-info {
+    width: 100%;
+    margin-left: 0.4em;
+    margin-bottom: 0.5em;
+
+    font-family: "Teko";
+    font-size: 2.4em;
+    text-align: left;
+
+    overflow: hidden;
+  }
+
+  .button {
+    width: 6em;
+    height: 1.5em;
+    margin-top: 0.2em;
+    padding: 0.3em 1.04em;
+
+    color: white;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+    outline: none;
+    background-color: #f0445e;
+
+    font-family: "Teko";
+    font-size: 1.8em;
+    text-align: center;
+    text-decoration: none;
+
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #c3305d;
+  }
+
+  .button:active {
+    background-color: #c3305d;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+}
+
+/* #Desktop */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1500px) {
+  .signin-signup-page-container {
+    width: 70vw;
+    min-width: 51em;
+    height: 70vh;
+    min-height: 33em;
+    max-height: 40em;
+    margin: 0 auto;
+    padding-top: 1em;
+  }
+
+  .signin-signup-page-card {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.85) 50%,
+      rgba(254, 187, 109, 0.95) 50%
+    );
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #20003e;
+  }
+
+  .signin-signup-form-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+
+    width: 50%;
+    min-width: 12em;
+    height: 100%;
+    padding: 1em 2em;
+
+    overflow: hidden;
+  }
+
+  .company-trademark {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+  .company-logo {
+    align-self: flex-end;
+    flex-shrink: 0;
+
+    width: 3em;
+    height: 3em;
+    margin-bottom: 0.1em;
+    margin-right: 0.5em;
+
+    background-image: url(../../assets/owl_bnw.svg);
+    background-repeat: no-repeat;
+  }
+
+  .company-name {
+    padding-top: 0.3em;
+
+    color: black;
+    font-size: 4.2em;
+    font-family: "Pacifico";
+  }
+
+  .side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+    min-width: 12em;
+    height: 100%;
+    /* padding: 3em 5em; */
+    padding: 3em 3em;
+
+    color: rgb(122, 45, 115);
+  }
+
+  .side-greeting {
+    margin-bottom: 0.1em;
+
+    font-family: "Teko-Semi-Bold";
+    font-size: 3.5em;
+  }
+
+  .side-span-info {
+    width: 100%;
+    margin-left: 0.4em;
+    margin-bottom: 0.5em;
+
+    font-family: "Teko";
+    font-size: 1.8em;
+    text-align: left;
+
+    overflow: hidden;
+  }
+
+  .button {
+    width: 6em;
+    height: 1.5em;
+    margin-top: 0.2em;
+    padding: 0.3em 1.04em;
+
+    color: white;
+    background-color: #f0445e;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+
+    font-family: "Teko";
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #c3305d;
+  }
+
+  .button:active {
+    background-color: #c3305d;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+}
+
+/* # Tablet - Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+ and (orientation: portrait) {
+  .signin-signup-page-container {
+    width: 85vw;
+    /* min-width: 56em; */
+    height: 55vh;
+    /* min-height: 33em; */
+    /* max-height: 34em; */
+    margin: 0 auto;
+    padding-top: 1em;
+  }
+
+  .signin-signup-page-card {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.85) 50%,
+      rgba(254, 187, 109, 0.95) 50%
+    );
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #20003e;
+  }
+
+  .signin-signup-form-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+
+    width: 50%;
+    min-width: 12em;
+    height: 100%;
+    padding: 2em 3em;
+
+    overflow: hidden;
+  }
+
+  .company-trademark {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-right: 1.5em;
+    margin-bottom: 2.3em;
+  }
+
+  .company-logo {
+    align-self: flex-end;
+    flex-shrink: 0;
+
+    width: 3.5em;
+    height: 3.5em;
+    margin-bottom: 0.1em;
+    margin-right: 0.5em;
+
+    background-image: url(../../assets/owl_bnw.svg);
+    background-repeat: no-repeat;
+  }
+
+  .company-name {
+    padding-top: 0.3em;
+
+    color: black;
+    font-size: 3.5em;
+    font-family: "Pacifico";
+  }
+
+  .side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+    min-width: 12em;
+    height: 100%;
+    /* padding: 3em 5em; */
+    padding: 2em 2em;
+
+    color: rgb(122, 45, 115);
+  }
+
+  .side-greeting {
+    margin-bottom: 0.1em;
+
+    font-family: "Teko-Semi-Bold";
+    font-size: 2.7em;
+  }
+
+  .side-span-info {
+    width: 100%;
+    margin-bottom: 0.5em;
+    margin-left: 0.2em;
+
+    font-family: "Teko";
+    font-size: 1.8em;
+    text-align: left;
+
+    overflow: hidden;
+  }
+
+  .button {
+    width: 6em;
+    height: 1.5em;
+    margin-top: 0.3em;
+    padding: 0.3em 1.04em;
+
+    color: white;
+    background-color: #f0445e;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+
+    font-family: "Teko";
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #c3305d;
+  }
+
+  .button:active {
+    background-color: #c3305d;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+}
+
+/* # Tablet - Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .signin-signup-page-container {
+    width: 70vw;
+    /* min-width: 56em; */
+    height: 80vh;
+    /* min-height: 33em; */
+    margin: 0 auto;
+    padding-top: 1em;
+  }
+
+  .signin-signup-page-card {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.85) 50%,
+      rgba(254, 187, 109, 0.95) 50%
+    );
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #20003e;
+  }
+
+  .signin-signup-form-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+
+    width: 50%;
+    min-width: 12em;
+    height: 100%;
+    padding: 3em 2em;
+
+    overflow: hidden;
+  }
+
+  .company-trademark {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-right: 1.5em;
+    margin-bottom: 2.8em;
+  }
+
+  .company-logo {
+    align-self: flex-end;
+    flex-shrink: 0;
+
+    width: 4.5em;
+    height: 4.5em;
+    margin-bottom: 0.1em;
+    margin-right: 0.5em;
+
+    background-image: url(../../assets/owl_bnw.svg);
+    background-repeat: no-repeat;
+  }
+
+  .company-name {
+    padding-top: 0.3em;
+
+    color: black;
+    font-size: 4.5em;
+    font-family: "Pacifico";
+  }
+
+  .side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+    min-width: 12em;
+    height: 100%;
+    /* padding: 3em 5em; */
+    padding: 3em 3em;
+
+    color: rgb(122, 45, 115);
+  }
+
+  .side-greeting {
+    margin-bottom: 0.1em;
+
+    font-family: "Teko-Semi-Bold";
+    font-size: 3.5em;
+  }
+
+  .side-span-info {
+    width: 100%;
+    margin-left: 0.4em;
+    margin-bottom: 0.5em;
+
+    font-family: "Teko";
+    font-size: 1.8em;
+    text-align: left;
+
+    overflow: hidden;
+  }
+
+  .button {
+    width: 6em;
+    height: 1.5em;
+    margin-top: 0.2em;
+    padding: 0.3em 1.04em;
+
+    color: white;
+    background-color: #f0445e;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+
+    font-family: "Teko";
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #c3305d;
+  }
+
+  .button:active {
+    background-color: #c3305d;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+}
+
+/* # Big Mobile - portrait*/
+@media only screen and (min-width:395px) and (max-width: 480px) and (orientation: portrait) {
+    .signin-signup-page-container {
+      width: 85vw;
+      height: 85vh;
+      margin: 0 auto;
+      padding-top: 0.8em;
+    }
+    .signin-signup-page-card {
+      display: flex;
+      flex-direction: column;
+
+      width: 100%;
+      height: 100%;
+
+      background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.85) 50%,
+        rgba(254, 187, 109, 0.95) 50%
+      );
+      border-radius: 30px;
+      box-sizing: border-box;
+      box-shadow: 0 0 10px #20003e;
+    }
+
+    .signin-signup-form-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      width: 100%;
+      min-width: 12em;
+      height: 50%;
+      padding: .75em 1em;
+
+      overflow: hidden;
+    }
+
+    .company-trademark {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      margin-right: 1.5em;
+      margin-bottom: 0.85em;
+    }
+
+    .company-logo {
+      align-self: flex-end;
+      flex-shrink: 0;
+
+      width: 2em;
+      height: 2em;
+      margin-bottom: 0.1em;
+      margin-right: 0.5em;
+
+      background-image: url(../../assets/owl_bnw.svg);
+      background-repeat: no-repeat;
+    }
+
+    .company-name {
+      padding-top: 0.3em;
+
+      color: black;
+      font-size: 2em;
+      font-family: "Pacifico";
+    }
+
+    .side-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      width: 100%;
+      min-width: 12em;
+      height: 50%;
+      padding: 1em 2em;
+
+      color: rgb(122, 45, 115);
+    }
+
+    .side-greeting {
+      margin-bottom: 0.1em;
+
+      font-family: "Teko-Semi-Bold";
+      font-size: 2em;
+    }
+
+    .side-span-info {
+      width: 100%;
+      margin-bottom: 0.5em;
+      margin-left: 0.2em;
+
+      font-family: "Teko";
+      font-size: 1.5em;
+      text-align: left;
+
+      overflow: hidden;
+    }
+
+    .button {
+      width: 5.5em;
+      height: 1.5em;
+      margin-top: 0.1em;
+      padding: 0.3em 1.04em;
+
+      color: white;
+      background-color: #f0445e;
+      border: none;
+      border-radius: 0.85em;
+      box-shadow: 0 0.35em #999;
+
+      font-family: "Teko";
+      font-size: .9em;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #c3305d;
+    }
+
+    .button:active {
+      background-color: #c3305d;
+      box-shadow: 0 0.19em #666;
+      transform: translateY(0.16em);
+    }
+  }
+
+/* # Small Mobile - portrait*/
+@media only screen and (max-width: 395px) and (orientation: portrait) {
+  .signin-signup-page-container {
+    width: 85vw;
+    height: 85vh;
+    margin: 0 auto;
+    padding-top: 0.8em;
+  }
+  .signin-signup-page-card {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.85) 50%,
+      rgba(254, 187, 109, 0.95) 50%
+    );
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #20003e;
+  }
+
+  .signin-signup-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    min-width: 12em;
+    height: 50%;
+    padding: .75em 1em;
+
+    overflow: hidden;
+  }
+
+  .company-trademark {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-right: 1.5em;
+    margin-bottom: 0.65em;
+  }
+
+  .company-logo {
+    align-self: flex-end;
+    flex-shrink: 0;
+
+    width: 1.8em;
+    height: 1.8em;
+    margin-right: 0.5em;
+
+    background-image: url(../../assets/owl_bnw.svg);
+    background-repeat: no-repeat;
+  }
+
+  .company-name {
+    padding-top: 0.3em;
+
+    color: black;
+    font-size: 1.8em;
+    font-family: "Pacifico";
+  }
+
+  .side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    min-width: 12em;
+    height: 50%;
+    padding: 1em 2em;
+
+    color: rgb(122, 45, 115);
+  }
+
+  .side-greeting {
+    margin-bottom: 0.1em;
+
+    font-family: "Teko-Semi-Bold";
+    font-size: 1.5em;
+  }
+
+  .side-span-info {
+    width: 100%;
+    margin-bottom: 0.5em;
+    margin-left: 0.2em;
+
+    font-family: "Teko";
+    font-size: 1.1em;
+    text-align: left;
+
+    overflow: hidden;
+  }
+
+  .button {
+    width: 5.5em;
+    height: 1.5em;
+    margin-top: 0em;
+    padding: 0.3em 1.04em;
+
+    color: white;
+    background-color: #f0445e;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+
+    font-family: "Teko";
+    font-size: .65em;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #c3305d;
+  }
+
+  .button:active {
+    background-color: #c3305d;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+}
+
+/* # Mobile landscape*/
+@media only screen and (max-width: 823px) and (orientation: landscape) {
+  .signin-signup-page-container {
+    width: 85vw;
+    height: 85vh;
+    margin: 0 auto;
+    padding-top: 0.6em;
+  }
+
+  .signin-signup-page-card {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.85) 50%,
+      rgba(254, 187, 109, 0.95) 50%
+    );
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #20003e;
+
+  }
+
+  .signin-signup-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+    min-width: 12em;
+    height: 100%;
+    padding: .75em 1em;
+
+    overflow: hidden;
+  }
+
+  .company-trademark {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-right: 1.5em;
+    margin-bottom: 0.65em;
+  }
+
+  .company-logo {
+    align-self: flex-end;
+    flex-shrink: 0;
+
+    width: 1.8em;
+    height: 1.8em;
+    margin-right: 0.5em;
+
+    background-image: url(../../assets/owl_bnw.svg);
+    background-repeat: no-repeat;
+  }
+
+  .company-name {
+    padding-top: 0.3em;
+
+    color: black;
+    font-size: 1.8em;
+    font-family: "Pacifico";
+  }
+
+  .side-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+    min-width: 12em;
+    height: 100%;
+    padding: 1em 2em;
+
+    color: rgb(122, 45, 115);
+  }
+
+  .side-greeting {
+    margin-bottom: 0.1em;
+
+    font-family: "Teko-Semi-Bold";
+    font-size: 1.5em;
+  }
+
+  .side-span-info {
+    width: 100%;
+    margin-bottom: 0.5em;
+    margin-left: 0.2em;
+
+    font-family: "Teko";
+    font-size: 1.1em;
+    text-align: left;
+
+    overflow: hidden;
+  }
+
+  .button {
+    width: 5.5em;
+    height: 1.5em;
+    margin-top: 0em;
+    padding: 0.3em 1.04em;
+
+    color: white;
+    background-color: #f0445e;
+    border: none;
+    border-radius: 0.85em;
+    box-shadow: 0 0.35em #999;
+
+    font-family: "Teko";
+    font-size: .65em;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #c3305d;
+  }
+
+  .button:active {
+    background-color: #c3305d;
+    box-shadow: 0 0.19em #666;
+    transform: translateY(0.16em);
+  }
+  
+}
+
+.rolling-owl {
+  -webkit-animation: spin 0.5s ease-in-out infinite;
+  -moz-animation: spin 0.5s ease-in-out infinite;
+  animation: spin 0.5s ease-in-out infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg) rotateZ(180deg);
+  }
+}

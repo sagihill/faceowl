@@ -1,8 +1,9 @@
 import React from 'react';
+import './CustomButton.css'
 
 const CustomButton = ({ children,...otherProps}) => {
     return (
-        <button className={`mt2 b shadow-3 ph3 pv2 input-reset ba b--black white-80 bg-near-black grow pointer f4 dib` }{...otherProps} >
+        <button className={`button` }{...otherProps} >
             {children}
         </button>
     )

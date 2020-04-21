@@ -1,56 +1,22 @@
 import React, { Component } from "react";
-import "./App.css";
-import Particles from "react-particles-js";
-import SignIn from "./pages/SignIn";
-import SignUp from "./pages/SignUp";
+import "./App.scss";
+import SignIn from "./pages/SignInSignUp/SignIn/SignIn";
+import SignUp from './pages/SignInSignUp/SignUp/SignUp';
 import Navigation from "./components/Navigation/Navigation";
-import Hompage from "./pages/Homepage";
-
-//Setup code for Particles package
-const particlesOptions = {
-  particles: {
-    number: {
-      value: 60,
-      density: {
-        enable: true,
-        value_area: 1000
-      }
-    },
-    line_linked: {
-      enable: false,
-      opacity: 0.02
-    },
-    move: {
-      direction: "right",
-      speed: 0.05
-    },
-    size: {
-      value: 1
-    },
-    opacity: {
-      anim: {
-        enable: true,
-        speed: 1,
-        opacity_min: 0.05
-      }
-    }
-  },
-  retina_detect: true
-};
-
-//initial textbox input after component mounting
-const initialInput = "Please paste an image URL here";
+import Hompage from './pages/Homepage/Homepage';
 
 //The empty state - when App is renderd
 const initialState = {
-  input: initialInput,
+  input: "",
   imageURL: "",
   uploadURL: "",
   box: {},
-  route: "signin",
-  isSignedIn: false,
+  route: "signin",  //  change back to ---> route: "signin",
+  isSignedIn: false, // change back to ---> isSignedIn: false,
   isFaceFound: false,
-  isImageLoaded: false,
+  loadingImage: false,
+  isButtonSubmitted: false,
+  imageFile: [],
   isDetectingFaces: false,
   user: {
     id: "",
@@ -95,6 +61,7 @@ class App extends Component {
     //getting image dimensions (width is constant but height varies)
     const width = Number(image.width);
     const height = Number(image.height);
+    console.log(width, height);
     return {
       leftCol: faceData.left_col * width,
       rightCol: (1 - faceData.right_col) * width,
@@ -102,53 +69,62 @@ class App extends Component {
       bottomRow: (1 - faceData.bottom_row) * height
     };
   };
+
   //uses calculateFaceLocation method for box display
   //input is the css object notaion 
   displayFaceBox = box => {
-    this.setState({ box: box });
+    console.log(box);
+    this.setState({ box: box, isButtonSubmitted: false});
   };
 
   //an event listener method for input change (when choosing pasting a URL)
   onInputChange = event => {
-    this.setState({ input: event.target.value});
-  };
-
-  //for clearing the initial input
-  onInputFocus = () => {
-    this.setState({ input: "" });
+    this.setState({ input: event.target.value, uploadURL: "", imageFile: []});
+    console.log(event.target.value);
   };
 
   //for reintializing input
   onInputBlur = () => {
-    this.setState({ input: "Please paste an image URL here" });
+    this.setState({ input: "" });
   };
 
   //an event listener for upload button (for uploading animation)
-  onButtonClick = () => {
+  onButtonClick = (event) => {
+    const imageInput = event.target;
+    imageInput.value = '';
     this.setState({isImageLoaded: false}) // state for 
   }
 
   //an event listener for image upload
   // input is the upload event
-  // output is setting the uploadURL state
-  OnImageUpload = async (event) => {
+  // output is setting the upload URL state
+  OnImageUpload = (event) => {
     const files = event.target.files;
-    const data = new FormData();
-    data.append('file',files[0]);
-    data.append('upload_preset','faceowl');
-    this.setState({loadingImage: true}); // for future loading animation
-    //cloudinary upload api
-    const response = await fetch(
-        'https://api.cloudinary.com/v1_1/dt94ijbsb/image/upload',
-        {
-            method: "POST",
-            body: data
-        }
-    )
-    const file = await response.json();
-    this.setState({isImageLoaded: true, uploadURL: file.secure_url});
-
-}
+    const uploadFileId = [files[0].lastModified, files[0].size];
+    const stateFileId = [this.state.imageFile.lastModified, this.state.imageFile.size];
+    if(stateFileId[0]===uploadFileId[0] && stateFileId[1]===uploadFileId[1]){
+      alert("Try to upload another image my friend");
+      return;
+    }
+    this.setState({loadingImage: true , imageFile: files[0], isFaceFound: false, input: "", isDetectingFaces: false}, () => {
+      const data = new FormData();
+      data.append('file',this.state.imageFile);
+      data.append('upload_preset','faceowl');
+      console.log("uploading");
+      //cloudinary upload api
+      fetch(
+          'https://api.cloudinary.com/v1_1/dt94ijbsb/image/upload',
+          {
+              method: "POST",
+              body: data
+          }
+      )
+      .then(response => response.json())
+      .then(response => {
+        this.setState({loadingImage: false,  uploadURL: response.secure_url});
+      })
+    });
+  }
 
 // event listener for handeling the detect option
 // when invoked the face recognition process is started
@@ -156,14 +132,19 @@ onButtonSubmit = () => {
   //the first few lines chooses proper URL from pasted or uploaded image
   // this is to deal with the case of both pasted and uploaded image url
   let URL = "";
-  if(this.state.input!==initialInput){
+  if(this.state.input!==""){
     URL = this.state.input
   } else {
       URL = this.state.uploadURL;
     }
+    console.log(URL);
+    if(URL===this.state.imageURL && URL!==''){
+      alert("Please try a new image my friend");
+      return;
+    }
     //using setState than invoking callback function for actual detect process
     // isFaceFound set to false for rerendering the Success banner
-    this.setState({ imageURL: URL, isFaceFound: false }, () => {
+    this.setState({ imageURL: URL, isFaceFound: false, box: {}, isDetectingFaces: true, isButtonSubmitted: true}, () => {
       //fetch call for server at imageURL route - the clarifai api process
       fetch("https://agile-eyrie-66946.herokuapp.com/imageURL", {
         method: "post",
@@ -195,18 +176,19 @@ onButtonSubmit = () => {
               })
               .catch(console.log);
               //setting state for rendering success banner
-            this.setState({isFaceFound: true})
-            //invoking the facebox diplay methods
-            this.displayFaceBox(this.calculateFaceLocation(response));
+            this.setState({isFaceFound: true, isButtonSubmitted: false}, () => {
+              //invoking the facebox diplay methods
+              this.displayFaceBox(this.calculateFaceLocation(response));
+            })
           } else {
-            this.setState({isFaceFound: false, input: "Please paste an image URL here" })
+            this.setState({isFaceFound: false, input: "", isButtonSubmitted: false, isDetectingFaces: false})
             alert('Sorry something went wrong, please try again');
           }
         })
         .catch(err => console.log(err));
-      });
+    });
       
-    };
+};
     
     // event listener for keyboard submission
     // enabling enter button submission
@@ -233,10 +215,9 @@ onButtonSubmit = () => {
   };
   render() {
     // state abstraction notation
-    const { imageURL, box, route, isSignedIn, isFaceFound, isImageLoaded} = this.state;
+    const { imageURL, box, route, isSignedIn, isFaceFound, loadingImage, isDetectingFaces,  isButtonSubmitted} = this.state;
     return (
-      <div className="App">
-        <Particles className="particles" params={particlesOptions} />
+      <div className={`App ${!isDetectingFaces ? "overflow" : ""}`}>
         <Navigation
           isSignedIn={isSignedIn}
           onRouteChange={this.onRouteChange}
@@ -255,10 +236,12 @@ onButtonSubmit = () => {
             box={box} 
             imageURL={imageURL} 
             isFaceFound = {isFaceFound}
-            isImageLoaded = {isImageLoaded}
+            isDetectingFaces = {isDetectingFaces}
+            isButtonSubmitted = {isButtonSubmitted}
+            loadingImage = {loadingImage}
             onButtonClick = {this.onButtonClick}
-          />
-        ) : route === "signin" || this.state.route === "signout" ? (
+          /> 
+        ) : route === "signin" || route === "signout" ? (
           <SignIn 
             loadUser={this.loadUser} 
             onRouteChange={this.onRouteChange} 

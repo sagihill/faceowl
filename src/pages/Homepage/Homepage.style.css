@@ -1,0 +1,489 @@
+/* # Large Desktop */
+@media only screen and (min-device-width: 1500px) {
+  .homepage-container {
+    width: 60vw;
+    min-width: 65em;
+    height: 68vh;
+    min-height: 38em;
+    max-height: 50em;
+    margin: 0 auto;
+    padding-top: 1em;
+  }
+
+  .homepage-card {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.85) 50%,
+      rgba(254, 187, 109, 0.95) 50%
+    );
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #20003e;
+
+    overflow: hidden;
+  }
+
+  .logo-greet_and_tries-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 50%;
+    min-width: 12em;
+    height: 100%;
+    padding: 3em 5em;
+
+    overflow: hidden;
+  }
+
+  .exp-face_recognition_panel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+    min-width: 12em;
+    height: 100%;
+    padding: 3em 3em;
+
+    color: rgb(122, 45, 115);
+  }
+
+  .success-face_recognition_image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 60vw;
+    min-width: 65em;
+    height: 22em;
+    margin: 1em auto; 
+  }
+    
+}
+
+
+/* # Desktop */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1500px) {
+  .homepage-container {
+    width: 70vw;
+    min-width: 56em;
+    height: 70vh;
+    min-height: 33em;
+    max-height: 34em;
+    margin: 0 auto;
+    padding-top: 1em;
+  }
+
+  .homepage-card {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.85) 50%,
+      rgba(254, 187, 109, 0.95) 50%
+    );
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #20003e;
+
+    overflow: hidden;
+  }
+
+  .logo-greet_and_tries-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 50%;
+    min-width: 12em;
+    height: 100%;
+    padding: 3em 3em;
+
+    overflow: hidden;
+  }
+
+  .exp-face_recognition_panel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+    min-width: 12em;
+    height: 100%;
+    padding: 3em 3em;
+
+    color: rgb(122, 45, 115);
+  }
+
+  .success-face_recognition_image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 70vw;
+    min-width: 56em;
+    height: 22em;
+    margin: 1em auto; 
+  }   
+}
+
+/* # Tablet */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+and (orientation: landscape) {
+  .homepage-container {
+    width: 70vw;
+    min-width: 56em;
+    height: 80vh;
+    min-height: 33em;
+    /* max-height: 34em; */
+    margin: 0 auto;
+    padding-top: 1em;
+  }
+
+  .homepage-card {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.85) 50%,
+      rgba(254, 187, 109, 0.95) 50%
+    );
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #20003e;
+
+    overflow: hidden;
+  }
+
+  .logo-greet_and_tries-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 50%;
+    min-width: 12em;
+    height: 100%;
+    padding: 3em 3em;
+
+    overflow: hidden;
+  }
+
+  .exp-face_recognition_panel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+    min-width: 12em;
+    height: 100%;
+    padding: 3em 2.5em;
+
+    color: rgb(122, 45, 115);
+  }
+
+  .success-face_recognition_image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 70vw;
+    min-width: 56em;
+    height: 22em;
+    margin: 1em auto; 
+  }   
+}
+
+/* # Tablet - Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+and (orientation: portrait) {
+  .homepage-container {
+    width: 85vw;
+    /* min-width: 56em; */
+    height: 55vh;
+    /* min-height: 33em; */
+    /* max-height: 34em; */
+    margin: 0 auto;
+    padding-top: 1em;
+  }
+
+  .homepage-card {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.85) 50%,
+      rgba(254, 187, 109, 0.95) 50%
+    );
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #20003e;
+
+    overflow: hidden;
+  }
+
+  .logo-greet_and_tries-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 50%;
+    min-width: 12em;
+    height: 100%;
+    padding: 3em 2em;
+
+    overflow: hidden;
+  }
+
+  .exp-face_recognition_panel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+    min-width: 12em;
+    height: 100%;
+    padding: 3em 2em;
+
+    color: rgb(122, 45, 115);
+  }
+
+  .success-face_recognition_image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 85vw;
+    /* min-width: 56em; */
+    height: 22em;
+    margin: 2em auto; 
+  }   
+}
+
+/* # Mobile Big - portrait*/
+@media only screen and (min-width: 395px) and (max-width: 480px) and (orientation: portrait) {
+  .homepage-container {
+    width: 85vw;
+    height: 85vh;
+    margin: 0 auto;
+    padding-top: .8em;
+  }
+
+  .homepage-card {
+    display: flex;
+    flex-direction: column;
+     
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.85) 50%,
+      rgba(254, 187, 109, 0.95) 50%
+    );
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #20003e;
+  }
+
+  .logo-greet_and_tries-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-width: 12em;
+    height: 50%;
+    padding: 1em 1em;
+
+    overflow: hidden;
+  }
+
+  .exp-face_recognition_panel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    min-width: 12em;
+    height: 50%;
+    padding: 1em 1em;
+
+    color: rgb(122, 45, 115);
+  }
+  
+  .success-face_recognition_image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 85vw;
+    /* min-width: 56em; */
+    height: 28em;
+    height: 100vh;
+    margin: 0em auto; 
+  } 
+  
+}
+
+/* # Mobile Small - portrait*/
+@media only screen and (max-width: 395px) and (orientation: portrait) {
+  .homepage-container {
+    width: 85vw;
+    height: 85vh;
+    margin: 0 auto;
+    padding-top: .6em;
+  }
+
+  .homepage-card {
+    display: flex;
+    flex-direction: column;
+     
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.85) 50%,
+      rgba(254, 187, 109, 0.95) 50%
+    );
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #20003e;
+  }
+
+  .logo-greet_and_tries-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-width: 12em;
+    height: 50%;
+    margin-top: 0em;
+    padding: 1em 1em;
+
+    overflow: hidden;
+  }
+
+  .exp-face_recognition_panel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+    min-width: 12em;
+    height: 50%;
+    padding: 1em 1em;
+
+    color: rgb(122, 45, 115);
+  }
+  
+  .success-face_recognition_image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 85vw;
+    /* min-width: 56em; */
+    height: 28em;
+    height: 100vh;
+    margin: 0em auto; 
+  } 
+  
+}
+
+/* # Mobile landscape*/
+@media only screen and (max-width: 823px) and (orientation: landscape) {
+  .homepage-container {
+    width: 85vw;
+    height: 85vh;
+    margin: 0 auto;
+    padding-top: .6em;
+  }
+
+  .homepage-card {
+    display: flex;
+    flex-direction: row;
+     
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.85) 50%,
+      rgba(254, 187, 109, 0.95) 50%
+    );
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #20003e;
+  }
+
+  .logo-greet_and_tries-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    min-width: 12em;
+    height: 100%;
+    margin-top: 0em;
+    padding: 1em 1em;
+
+    overflow: hidden;
+  }
+
+  .exp-face_recognition_panel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+    min-width: 12em;
+    height: 100%;
+    padding: 1.5em 1em;
+
+    color: rgb(122, 45, 115);
+  }
+  
+  .success-face_recognition_image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 85vw;
+    /* min-width: 56em; */
+
+    height: 100vh;
+    margin: 0em auto; 
+  } 
+  
+}

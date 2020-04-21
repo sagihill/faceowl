@@ -1,0 +1,53 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  text-align: center;
+}
+
+.overflow {
+  overflow-y: hidden;
+}
+
+/* # Large Desktop */
+@media only screen and (min-device-width: 1500px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .overflow {
+    overflow-y: hidden;
+  }
+}
+
+// /* Tablet */
+// @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+//   .overflow {
+//     overflow-y: hidden;
+//   }
+// }
+
+// /* # Mobile - Landscape*/
+// @media only screen and (max-width: 480px) and (orientation: landscape) {
+//   .overflow {
+//     overflow-y: hidden;
+//   }
+// }
+
+// /* # Mobile - portrait*/
+// @media only screen and (max-width: 480px) and (orientation: portrait) {
+//   .App {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//   }
+
+//   .overflow {
+//     overflow-y: hidden;
+//   }
+// }

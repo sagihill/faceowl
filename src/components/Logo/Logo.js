@@ -1,15 +1,19 @@
 import React from 'react';
 import Tilt from 'react-tilt';
-import owl from './Logo.png';
+import owl from '../../assets/owl.svg';
 import './Logo.css';
 
-const Logo = () => {
+const Logo = ({isButtonSubmitted}) => {
 	return (
-		<div className ='center ma3 mt0'>
-			<Tilt options={{ max : 20 }} style={{ height: 150, width: 150 }} >
- 				<div className="Tilt-inner pa2">
- 					<img alt='Logo' src={owl}/>
- 				</div>
+		<div className ='logo-container'>
+			<Tilt className='tilt' options={{ max : 20 }}>
+					 {
+						(!isButtonSubmitted) ? (
+							<img className='' alt='Logo' src={owl}/>
+						) : (
+							<img className='rolling-owl' alt='Logo' src={owl}/>
+						)
+					}	
 			</Tilt>
 		</div>
 	);

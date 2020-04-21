@@ -1,0 +1,135 @@
+/* # Large Desktop */
+@media only screen and (min-device-width: 1500px) { 
+    .sign-up-request{
+        padding-top: 0.7em;
+
+        color: #5D2689;
+
+        font-family: 'Teko';
+        font-size: 3.2em;        
+    }
+    
+    .inputs-form{
+        padding-bottom: 1em;
+        padding-top: 0.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* # Desktop */
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1500px) {
+    .sign-up-request{
+        padding-bottom: 0.2em;
+
+        color: #5D2689;
+
+        font-family: 'Teko';
+        font-size: 1.68em;
+    }
+    
+    .inputs-form{
+        padding-bottom: 1em;
+        padding-top: 0.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* # Tablet - Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+and (orientation: landscape) {
+    .sign-up-request{
+        padding-bottom: 0.2em;
+
+        color: #5D2689;
+
+        font-family: 'Teko';
+        font-size: 2em;
+    }
+    
+    .inputs-form{
+        padding-bottom: 1em;
+        padding-top: 0.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* # Tablet - Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+and (orientation: portrait) {
+    .sign-up-request{
+        padding-bottom: 0.2em;
+
+        color: #5D2689;
+
+        font-family: 'Teko';
+        font-size: 2em;
+    }
+    
+    .inputs-form{
+        padding-bottom: 1em;
+        padding-top: 0.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* # Big Mobile - portrait*/
+@media only screen and (min-width:395px) and (max-width: 480px) and (orientation: portrait) {
+    .sign-up-request{
+        color: #5D2689;
+
+        font-family: 'Teko';
+        font-size: 1.1em;
+    }
+    
+    .inputs-form{
+        padding-bottom: 1em;
+        padding-top: 0.2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* # Small Mobile - portrait*/
+@media only screen and (max-width: 395px) and (orientation: portrait) {
+    .sign-up-request{
+        color: #5D2689;
+
+        font-family: 'Teko';
+        font-size: .85em;
+    }
+    
+    .inputs-form{
+        padding-bottom: 1em;
+        padding-top: 0.2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* # Mobile - landscape*/
+@media only screen and (max-width: 823px) and (orientation: landscape) {
+    .sign-up-request{
+        color: #5D2689;
+
+        font-family: 'Teko';
+        font-size: .85em;
+    }
+    
+    .inputs-form{
+        padding-bottom: 1em;
+        padding-top: 0.2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

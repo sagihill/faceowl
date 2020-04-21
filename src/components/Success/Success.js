@@ -1,4 +1,5 @@
 import React from 'react';
+import './Success.style.css';
 
 class Success extends React.Component {
     componentDidMount() {
@@ -7,9 +8,9 @@ class Success extends React.Component {
     }
 	render() {
         return (
-            <div id='success' className='f1 white mb1'>
-			    <h1 className="mv3">Great Success!</h1>
-		    </div>
+            <div className='success-container'>
+                <div id='success'>Great Success!</div>
+            </div>
         );
     }
 }

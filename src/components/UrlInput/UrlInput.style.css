@@ -1,0 +1,555 @@
+/*------------------input-clearence-------------------*/
+input {
+  outline: none;
+  border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus,
+input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #909090;
+}
+input:focus:-moz-placeholder {
+  color: #909090;
+}
+input:focus::-moz-placeholder {
+  color: #909090;
+}
+input:focus:-ms-input-placeholder {
+  color: #909090;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: #909090;
+}
+textarea:focus:-moz-placeholder {
+  color: #909090;
+}
+textarea:focus::-moz-placeholder {
+  color: #909090;
+}
+textarea:focus:-ms-input-placeholder {
+  color: #909090;
+}
+
+input::-webkit-input-placeholder {
+  color: #909090;
+}
+input:-moz-placeholder {
+  color: #909090;
+}
+input::-moz-placeholder {
+  color: #909090;
+}
+input:-ms-input-placeholder {
+  color: #909090;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #909090;
+}
+textarea:-moz-placeholder {
+  color: #909090;
+}
+textarea::-moz-placeholder {
+  color: #909090;
+}
+textarea:-ms-input-placeholder {
+  color: #909090;
+}
+
+/*-----------------page layout---------------------*/
+
+/* # Large Desktop */
+@media only screen and (min-device-width: 1500px) {
+  .url-input-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    width: 55%;
+    margin-bottom: 1em;
+    z-index: 1;
+  }
+
+  .url-input {
+    display: block;
+
+    width: 100%;
+    height: 1.8em;
+    padding: 0 0.85em 0 0.85em;
+
+    color: #686868;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0em 0em 0.35em inset rgba(0, 0, 0, 0.3);
+
+    font-family: "Teko";
+    font-size: 1.8em;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  /*------------------------------------------------------------------
+[ Focus ]*/
+  .focus-anim-url-input {
+    position: absolute;
+    z-index: -1;
+    display: block;
+
+    width: 94%;
+    height: 3.3em;
+
+    color: rgba(211, 63, 141, 0.6);
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 0px;
+  }
+
+  .url-input:focus + .focus-anim-url-input {
+    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+    animation: anim-shadow 0.5s ease-in-out forwards;
+  }
+
+  @-webkit-keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 60px 80px;
+      opacity: 0;
+    }
+  }
+
+  @keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 60px 80px;
+      opacity: 0;
+    }
+  }
+
+  .url-input:focus + .focus-anim-url-input {
+    color: #d33f8d;
+    padding-left: 18px;
+  }
+
+  /*==================================================================*/
+}
+
+/* # Desktop */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1500px) {
+  .url-input-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    width: 55%;
+    margin-bottom: 1em;
+    z-index: 1;
+  }
+
+  .url-input {
+    display: block;
+
+    width: 100%;
+    height: 1.8em;
+    padding: 0 0.85em 0 0.85em;
+
+    color: #686868;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0em 0em 0.35em inset rgba(0, 0, 0, 0.3);
+
+    font-family: "Teko";
+    font-size: 1.4em;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  /*------------------------------------------------------------------
+[ Focus ]*/
+  .focus-anim-url-input {
+    position: absolute;
+    z-index: -1;
+    display: block;
+
+    width: 92%;
+    height: 2.55em;
+    color: rgba(211, 63, 141, 0.6);
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 0px;
+  }
+
+  .url-input:focus + .focus-anim-url-input {
+    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+    animation: anim-shadow 0.5s ease-in-out forwards;
+  }
+
+  @-webkit-keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 60px 80px;
+      opacity: 0;
+    }
+  }
+
+  @keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 60px 80px;
+      opacity: 0;
+    }
+  }
+
+  .url-input:focus + .focus-anim-url-input {
+    color: #d33f8d;
+    padding-left: 18px;
+  }
+}
+
+/* # Tablet - Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .url-input-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    width: 55%;
+    margin-bottom: 1em;
+    z-index: 1;
+  }
+
+  .url-input {
+    display: block;
+
+    width: 100%;
+    height: 1.8em;
+    padding: 0 0.85em 0 0.85em;
+
+    color: #686868;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0em 0em 0.35em inset rgba(0, 0, 0, 0.3);
+
+    font-family: "Teko";
+    font-size: 1.4em;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  /*------------------------------------------------------------------
+[ Focus ]*/
+  .focus-anim-url-input {
+    position: absolute;
+    z-index: -1;
+    display: block;
+
+    width: 92%;
+    height: 2.55em;
+    color: rgba(211, 63, 141, 0.6);
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 0px;
+  }
+
+  .url-input:focus + .focus-anim-url-input {
+    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+    animation: anim-shadow 0.5s ease-in-out forwards;
+  }
+
+  @-webkit-keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 60px 80px;
+      opacity: 0;
+    }
+  }
+
+  @keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 60px 80px;
+      opacity: 0;
+    }
+  }
+
+  .url-input:focus + .focus-anim-url-input {
+    color: #d33f8d;
+    padding-left: 18px;
+  }
+}
+/* # Tablet - Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+ and (orientation: portrait) {
+  .url-input-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    width: 50%;
+    margin-bottom: 1em;
+    z-index: 1;
+  }
+
+  .url-input {
+    display: block;
+
+    width: 100%;
+    height: 1.8em;
+    padding: 0 0.85em 0 0.85em;
+
+    color: #686868;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0em 0em 0.35em inset rgba(0, 0, 0, 0.3);
+
+    font-family: "Teko";
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  /*------------------------------------------------------------------
+[ Focus ]*/
+  .focus-anim-url-input {
+    position: absolute;
+    z-index: -1;
+    display: block;
+
+    width: 87%;
+    height: 1.8em;
+    color: rgba(211, 63, 141, 0.6);
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 0px;
+  }
+
+  .url-input:focus + .focus-anim-url-input {
+    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+    animation: anim-shadow 0.5s ease-in-out forwards;
+  }
+
+  @-webkit-keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 60px 80px;
+      opacity: 0;
+    }
+  }
+
+  @keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 60px 80px;
+      opacity: 0;
+    }
+  }
+
+  .url-input:focus + .focus-anim-url-input {
+    color: #d33f8d;
+    padding-left: 18px;
+  }
+}
+
+/* # Big Mobile - Portrait*/
+  @media only screen and (min-device-width: 395px) and (max-device-width: 480px) and (orientation: portrait) {
+  .url-input-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    width: 45%;
+    margin-bottom: 1em;
+    z-index: 1;
+  }
+
+  .url-input {
+    display: block;
+
+    width: 100%;
+    height: 1.8em;
+    padding: 0 0.85em 0 0.85em;
+
+    color: #686868;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0em 0em 0.35em inset rgba(0, 0, 0, 0.3);
+
+    font-family: "Teko";
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  /*------------------------------------------------------------------
+[ Focus ]*/
+  .focus-anim-url-input {
+    position: absolute;
+    z-index: -1;
+    display: block;
+
+    width: 87%;
+    height: 1.8em;
+    color: rgba(211, 63, 141, 0.6);
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 0px;
+  }
+
+  .url-input:focus + .focus-anim-url-input {
+    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+    animation: anim-shadow 0.5s ease-in-out forwards;
+  }
+
+  @-webkit-keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 60px 80px;
+      opacity: 0;
+    }
+  }
+
+  @keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 60px 80px;
+      opacity: 0;
+    }
+  }
+
+  .url-input:focus + .focus-anim-url-input {
+    color: #d33f8d;
+    padding-left: 18px;
+  }
+}
+
+/* # Small Mobile - Portrait*/
+@media only screen and (max-device-width: 395px) and (orientation: portrait) {
+  .url-input-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    width: 45%;
+    margin-bottom: 1em;
+    z-index: 1;
+  }
+
+  .url-input {
+    display: block;
+
+    width: 100%;
+    height: 1.8em;
+    padding: 0 0.85em 0 0.85em;
+
+    color: #686868;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0em 0em 0.35em inset rgba(0, 0, 0, 0.3);
+
+    font-family: "Teko";
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  /*------------------------------------------------------------------
+[ Focus ]*/
+  .focus-anim-url-input {
+    position: absolute;
+    z-index: -1;
+    display: block;
+
+    width: 87%;
+    height: 1.8em;
+    color: rgba(211, 63, 141, 0.6);
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 0px;
+  }
+
+  .url-input:focus + .focus-anim-url-input {
+    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+    animation: anim-shadow 0.5s ease-in-out forwards;
+  }
+
+  @-webkit-keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 60px 80px;
+      opacity: 0;
+    }
+  }
+
+  @keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 60px 80px;
+      opacity: 0;
+    }
+  }
+
+  .url-input:focus + .focus-anim-url-input {
+    color: #d33f8d;
+    padding-left: 18px;
+  }
+}
+
+/* # Mobile - Landscape*/
+@media only screen and (max-device-width: 823px) and (orientation: landscape) {
+  .url-input-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    width: 58%;
+    margin-bottom: 0.8em;
+    z-index: 1;
+  }
+
+  .url-input {
+    display: block;
+
+    width: 100%;
+    height: 1.8em;
+    /* padding: 0 0.85em 0 0.85em; */
+
+    color: #686868;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0em 0em 0.35em inset rgba(0, 0, 0, 0.3);
+
+    font-family: "Teko";
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  /*------------------------------------------------------------------
+[ Focus ]*/
+  .focus-anim-url-input {
+    position: absolute;
+    z-index: -1;
+    display: block;
+
+    width: 87%;
+    height: 1.8em;
+    color: rgba(211, 63, 141, 0.6);
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 0px;
+  }
+
+  .url-input:focus + .focus-anim-url-input {
+    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+    animation: anim-shadow 0.5s ease-in-out forwards;
+  }
+
+  @-webkit-keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 60px 80px;
+      opacity: 0;
+    }
+  }
+
+  @keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 60px 80px;
+      opacity: 0;
+    }
+  }
+
+  .url-input:focus + .focus-anim-url-input {
+    color: #d33f8d;
+    padding-left: 18px;
+  }
+}

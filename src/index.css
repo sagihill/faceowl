@@ -1,31 +1,134 @@
 @font-face {
-	font-family: 'Oswald-Regular';
-	src: url('./fonts/oswald/Oswald-Regular.ttf');
+  font-family: "Oswald-Regular";
+  src: url("./fonts/oswald/Oswald-Regular.ttf");
 }
+
 @font-face {
-	font-family: 'QuattrocentoSans-Regular';
-	src: url('./fonts/quattrocentosans/QuattrocentoSans-Regular.ttf');
+  font-family: "Teko-Bold";
+  src: url("./fonts/teko/Teko-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Teko-Semi-Bold";
+  src: url("./fonts/teko/Teko-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Teko";
+  src: url("./fonts/teko/Teko-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url("./fonts/pacifico/Pacifico-Regular.ttf");
 }
 
 html {
-	scroll-behavior: smooth;
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
 }
 
-body{
-	width: 100%;
-	height: 100%;
- 	margin: 0px;
- 	padding: 0px;
- 	 /*need to change background*/
-	background: linear-gradient(to top, #2C5364, #203A43, #0F2027) center center fixed; 
-	background-size: 100%;
-  	font-family: 'Oswald-Regular';
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+body {
+  -ms-overflow-style: none;
 }
 
 button {
-	cursor: pointer;
+  cursor: pointer;
 }
 
-.cool{
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+.cool {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* # Large Desktop */
+@media only screen and (min-device-width: 1500px) {
+  body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../src/assets/background-desktop-large.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 20% 0%;
+    font-family: "Oswald-Regular";
+    overflow-x: hidden;
+  }
+}
+
+/* # Desktop */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1500px) {
+	body {
+	  margin: 0px;
+	  padding: 0px;
+	  background-image: url(../src/assets/background.jpg);
+	  background-size: auto;
+	  background-repeat: no-repeat;
+	  background-position: 40% 20%;
+	  font-family: "Oswald-Regular";
+	  overflow-x: hidden;
+	}
+  }
+
+/* # Tablet - Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+and (orientation: landscape) {
+  body {
+	  margin: 0px;
+	  padding: 0px;
+	  background-image: url(../src/assets/background.jpg);
+	  background-size: auto;
+	  background-repeat: no-repeat;
+    background-position: 80% 10%;
+    font-family: "Oswald-Regular";
+	  overflow-x: hidden;
+	}
+}
+
+/* # Tablet - Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+and (orientation: portrait) {
+  body {
+	  margin: 0px;
+	  padding: 0px;
+	  background-image: url(../src/assets/background-tablet-portrait.jpg);
+	  background-size: auto;
+	  background-repeat: no-repeat;
+    background-position: 70% 0%;
+    font-family: "Oswald-Regular";
+    overflow-x: hidden;
+	}
+}
+
+/* # Big Mobile - portrait*/
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  body {
+	  margin: 0px;
+	  padding: 0px;
+	  background-image: url(../src/assets/background-mobile-portrait-large.jpg);
+	  background-size: auto;
+	  background-repeat: no-repeat;
+    background-position: 20% 0%;
+    font-family: "Oswald-Regular";
+    overflow-x: hidden;
+	}
+}
+
+/* # Mobile - Landscape*/
+@media only screen and (max-width: 823px) and (orientation: landscape) {
+  body {
+	  margin: 0px;
+	  padding: 0px;
+	  background-image: url(../src/assets/background-mobile-portrait-large.jpg);
+	  background-size: auto;
+	  background-repeat: no-repeat;
+    background-position: 20% 0%;
+    font-family: "Oswald-Regular";
+    overflow-x: hidden;
+	}
 }

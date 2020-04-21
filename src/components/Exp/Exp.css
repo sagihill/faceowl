@@ -1,0 +1,186 @@
+/* # Large Desktop */
+@media only screen and (min-device-width: 1500px) {
+  .exp-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .exp-big {
+    margin-bottom: 0.4em;
+
+    font-family: "Teko-Semi-Bold";
+    font-size:  2.7em;
+  }
+
+  .exp-small {
+    margin-bottom: 1.1em;
+    margin-left: 0.5em;
+
+    font-family: "Teko";
+    font-size: 1.9em;
+    text-align: left;
+  }
+}
+
+/* # Desktop */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1500px) {
+  .exp-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .exp-big {
+    margin-bottom: 0.3em;
+
+    font-family: "Teko-Semi-Bold";
+    font-size: 2.1em;
+  }
+
+  .exp-small {
+    margin-bottom: 1.5em;
+    margin-left: 0.5em;
+
+    font-family: "Teko";
+    font-size: 1.5em;
+    text-align: left;
+  }
+}
+
+/* # Tablet - Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+and (orientation: landscape) {
+  .exp-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .exp-big {
+    margin-bottom: 0.3em;
+
+    font-family: "Teko-Semi-Bold";
+    font-size: 3em;
+  }
+
+  .exp-small {
+    margin-bottom: 0.5em;
+    margin-left: 0.6em;
+
+    font-family: "Teko";
+    font-size: 1.8em;
+    text-align: left;
+  }
+}
+
+
+/* # Tablet - Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+and (orientation: portrait) {
+  .exp-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .exp-big {
+    margin-bottom: 0.3em;
+
+    font-family: "Teko-Semi-Bold";
+    font-size: 2.5em;
+  }
+
+  .exp-small {
+    margin-bottom: 0.5em;
+    margin-left: 0.4em;
+
+    font-family: "Teko";
+    font-size: 1.5em;
+    text-align: left;
+  }
+}
+
+/* # Big Mobile - portrait*/
+@media only screen and (min-width: 395px) and (max-width: 480px) and (orientation: portrait) {
+  .exp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 50%;
+  }
+
+  .exp-big {
+    width: 70%;
+    margin-bottom: 0.2em;
+
+    font-family: "Teko-Semi-Bold";
+    font-size: 2.2em;
+  }
+
+  .exp-small {
+    margin-bottom: 0.5em;
+    margin-left: 0.8em;
+
+    font-family: "Teko";
+    font-size: 1.2em;
+    text-align: left;
+  }
+}
+
+/* # Small Mobile - portrait*/
+@media only screen and (max-width: 395px) and (orientation: portrait) {
+  .exp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 50%;
+  }
+
+  .exp-big {
+    width: 80%;
+    margin-bottom: 0.2em;
+
+    font-family: "Teko-Semi-Bold";
+    font-size: 1.5em;
+  }
+
+  .exp-small {
+    width: 90%;
+    margin-bottom: 0.5em;
+    margin-left: 0.8em;
+
+    font-family: "Teko";
+    font-size: 0.90em;
+    text-align: left;
+  }
+}
+
+/* # Mobile - Landscape*/
+@media only screen and (max-width: 823px) and (orientation: landscape) {
+  .exp-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 50%;
+  }
+
+  .exp-big {
+    width: 80%;
+    margin-bottom: 0.2em;
+
+    font-family: "Teko-Semi-Bold";
+    font-size: 1.5em;
+  }
+
+  .exp-small {
+    width: 90%;
+    margin-bottom: 0.5em;
+    margin-left: 0.8em;
+
+    font-family: "Teko";
+    font-size: 0.95em;
+    text-align: left;
+  }
+}
+
